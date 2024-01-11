@@ -1,0 +1,656 @@
+@font-face {
+    font-family: "Bebas Neue";
+    src: url(../fonts/BebasNeue-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    grid-area: header;
+    position: relative;
+}
+
+nav{
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+}
+
+/*Logo del menu de navegacion*/
+.navbar-brand img {
+    transition: .5s;
+}
+
+.navbar-brand img:hover{
+    transform:scale(1.05);
+}
+
+
+.nav-item a{
+    font-weight: 400;    
+}
+
+.navbar-nav .active{
+    border-bottom: solid 1px #ffffff;
+}
+
+.nav-link:hover{
+    border-bottom: solid 0.5px #666;
+}
+
+
+
+/*Imagen portada index*/
+.portadaIndex{
+    height: 600px;
+    background-image:linear-gradient(rgba(5,7,12,0.60),rgba(5,7,12,0.60)), url(../img/portada2.webp);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+    color: #ffffff;
+}
+
+.portadaIndex h1{
+    padding: 190px 0 50px 0;
+    text-align: center;
+    font-family: "Bebas Neue";
+    font-weight: 500;
+    font-size: 5rem;
+}
+
+.portadaIndex h1 strong{
+    color: #ff0000;
+}
+
+.portadaIndex p{
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+main{
+    grid-area: main;
+}
+
+/*Titulo de seccion servicios*/
+#servicios-index h2{
+    color:#f2f4f3;
+    font-size: 2rem;
+}
+
+/*Tarjetas servicios index*/
+#servicios-index{
+    height: 600px;
+    background-color: #000000;
+    padding: 25px;
+    text-align: center;
+    display: grid;
+    grid-template-areas: 
+    "titulo titulo"
+    "card1 card2";
+    justify-content: center;
+    align-items: center;
+}
+
+#servicios-index h2:first-child{
+    grid-area: titulo;
+}
+
+#servicios-index div:nth-child(2){
+    grid-area: card1;
+}
+
+#servicios-index div:last-child{
+    grid-area: card2;
+}
+
+
+.servicios-tarjeta{
+    width: 400px;
+    border: solid 1px #777;
+    border-radius: 9px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f2f4f3;
+    box-shadow: -5px 5px 20px 0px #777;
+}
+
+.servicios-tarjeta h3{
+    font-size: 1.7rem;
+}
+
+.servicios-tarjeta p{
+    color: #666;
+    padding: 15px;
+    font-size: 1.25rem;
+}
+/*Botones*/
+.boton{
+    background-color: #333;
+    border: 0px;
+    border-radius: 8px;
+    padding: 2px;
+    transition: 0.3s;
+}
+
+.boton a{
+    display: block;
+    padding: 6px;
+    color: #ffff;
+}
+
+.boton:hover{
+    background-color: #666;
+}
+
+.boton:active{
+    background-color: #888;
+    color: #000000;
+}
+
+
+/*Seccion quienes somos*/
+
+.quienesSomos{
+    background-color: #131212;
+    padding: 50px;
+}
+
+.quienesSomos article{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.quienesSomos article img{
+    height: 400px;
+    width: 400px;
+    border-radius: 20px 0 0 20px;
+}
+
+.quienesSomos div{
+    height: 370px;
+    width: 400px;
+    padding: 15px;
+    text-align: center;
+    background-color: #f2f4f3;
+    border-radius: 0 20px 20px 0px;
+}
+
+.quienesSomos article div h3{
+    font-size: 1.7rem;
+    padding: 5px;
+}
+
+.quienesSomos article div p{
+    color: #666;
+    padding: 10px;
+    font-size: 1.25rem;
+}
+
+
+/*Seccion quienes somos*/
+
+/*Footer*/
+footer{
+    background-color: #F2F4F3;
+    color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    grid-area: footer;
+}
+footer img{
+    height: 120px;
+    margin: 0px;
+}
+
+.footer-contacto h3{
+    text-decoration: underline;
+    text-align: right;
+    padding-bottom: 10px;
+}
+
+.footer-contacto p{
+    text-align: right;
+}
+ /*H1 paginas no index*/
+
+ .tituloPagina{
+    text-align: center;
+    color: #ffff;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+/*pagina empresa*/
+.portadaEmpresa{
+    height: 200px;
+    padding: 50px;
+    background-image: linear-gradient(rgba(5,7,12,0.60),rgba(5,7,12,0.60)), url(../img/frente-matadero.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+#historiaEmpresa{
+    background-color: #000000;
+    padding: 50px;
+}
+
+#historiaEmpresa img{
+    height: 500px;
+    width: 380px;
+    border-radius: 10px;
+    padding: 55px;
+}
+
+#historiaEmpresa h2{
+    font-size: 1.7rem;
+    color: #ff0000;
+    width: 600px;
+}
+
+#historiaEmpresa article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#historiaEmpresa div{
+    width: 800px;
+    color: #f2f4f3;
+    text-align: left;
+}
+
+#historiaEmpresa p{
+    padding: 5px;
+    width: 700px;
+    font-size: 1.2rem;
+}
+
+/*Tarjetas mision,vision,valores*/
+#basesEmpresa{
+    padding: 40px;
+    background-color: #333;
+    display: grid;
+    grid-template-columns: repeat(3,500px);
+    grid-template-rows: 400px;
+    gap: 5px;
+    justify-items: center;
+}
+
+.tarjetaMision, .tarjetaValores{
+    width: 350px;
+    border-radius: 9px;
+    padding: 20px;
+    background-color: #f2f4f3;
+    font-size: 1.2rem;
+}
+
+.tarjetaVision{
+    width: 350px;
+    border-radius: 9px;
+    padding: 20px;
+    background:linear-gradient(130.58deg, #ED2E26 9.62%, #A50903 84.33%), #124F86;
+    font-size: 1.2rem;
+}
+
+.tarjetaMision h3, .tarjetaValores h3{
+    font-size: 1.6rem;
+    text-decoration: underline;
+    color: #A50903;
+    padding: 5px;
+}
+
+.tarjetaMision p, .tarjetaValores p{
+    color: #666;
+    padding: 10px;
+}
+
+.tarjetaVision h3{
+    font-size: 1.6rem;
+    text-decoration: underline;
+    color: #e8e8e8;
+    padding: 5px;
+}
+
+.tarjetaVision p{
+    color: #e3e3e3;
+    padding: 10px;
+}
+
+
+.tarjetaValores ul{
+    color: #666;
+    list-style: none;
+}
+
+.tarjetaValores li{
+    padding: 5px;
+}
+
+
+.tarjetaValores span{
+    color: #000000;
+}
+
+
+/*Seccion prensa*/
+#prensa{
+    padding: 50px;
+    text-align: center;
+}
+
+
+
+
+/*pagina servicios*/
+
+.portadaServicios{
+    height: 200px;
+    padding: 50px;
+    background-image: linear-gradient(rgba(5,7,12,0.60),rgba(5,7,12,0.60)), url(../img/portadaServicios.webp);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+/*seccion faena y venta*/
+
+#servicioFaena article{
+    padding: 40px;
+    background-color: #0c0c0c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#servicioVenta article{
+    padding: 40px;
+    background-color: #0c0c0c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.faenaImagen,.ventaImagen {
+    position: relative;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.faenaImagen h2{
+    font-family: "Bebas neue";
+    font-weight: 400;
+    color: #ffff;
+    border: solid 2px;
+    border-radius: 10px;
+    font-size: 3rem;
+    padding: 10px;
+    position: absolute;
+    background-color: #00000072;
+}
+
+.faenaImagen img{
+    width: 600px;
+    border-radius: 15px;
+}
+
+.faenaTexto{
+    width: 400px;
+    padding: 20px;
+    background:linear-gradient(130.58deg, #ED2E26 9.62%, #A50903 84.33%), #124F86;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.faenaTexto h3, .ventaTexto h3{
+    padding: 10px;
+    text-transform: uppercase;
+    color: #f2f4f3;
+}
+
+.faenaTexto p, .ventaTexto p{
+    color: #afafaf;
+    padding: 0 10px 5px 10px;
+}
+
+.ventaImagen h2{
+    font-family: "Bebas neue";
+    font-weight: 400;
+    color: #ffff;
+    border: solid 2px;
+    border-radius: 10px;
+    font-size: 3rem;
+    padding: 10px;
+    position: absolute;
+    background-color: #00000072;
+}
+
+.ventaImagen img{
+    width: 600px;
+    height: 400px;
+    border-radius: 15px;
+}
+
+.ventaTexto{
+    width: 400px;
+    padding: 20px;
+    background: linear-gradient(130.58deg, #0c07cb 9.62%, #03094f 84.33%), #124F86;
+    border-radius: 15px;
+    text-align: center;
+}
+
+
+/*servicios boton contactanos*/
+
+.serviciosContacto{
+    color: #f2f4f3;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2rem;
+    background-color: #0c0c0c;
+}
+
+
+
+/*portada Contacto*/
+.portadaContacto{
+    height: 200px;
+    padding: 50px;
+    background-image: linear-gradient(rgba(5,7,12,0.60),rgba(5,7,12,0.60)),url(../img/portada4.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.textoFormulario{
+    text-align: center;
+    font-size: 0.9rem;
+    background-color: #000000;
+    color: #afafaf;
+    padding: 10px;
+    font-size: 1.3rem;
+}
+
+#formularioContacto{
+    padding-bottom: 50px;
+    background-color: black;
+    color: #afafaf;
+    display: grid;
+    grid-template-areas: 
+    "servicio nombre"
+    "telefono email"
+    "mensaje mensaje"
+    "sumbit sumbit";
+    justify-content: center;
+    align-content: center;
+    font-size: 1.3rem;
+}
+
+#formularioContacto div{
+    padding: 8px;
+}
+
+
+#formularioContacto div:first-child{
+    grid-area: servicio;
+    display: flex;
+    flex-direction: column;
+}
+
+#formularioContacto div:nth-child(2){
+    grid-area: nombre;
+    display: flex;
+    flex-direction: column;
+}
+
+#formularioContacto div:nth-child(3){
+    grid-area: telefono;
+    display: flex;
+    flex-direction: column;
+}
+
+#formularioContacto div:nth-child(4){
+    grid-area: email;
+    display: flex;
+    flex-direction: column;
+}
+
+#formularioContacto div:nth-child(5){
+    grid-area: mensaje;
+    display: flex;
+    flex-direction: column;
+}
+
+#formularioContacto div:last-child{
+    grid-area: sumbit;
+    display: flex;
+    justify-content: space-between;
+}
+
+#formularioContacto input, #formularioContacto select, #formularioContacto textarea {
+    background-color: #222;
+    border: solid 1px;
+    border-color: #333232;
+    color: #777;
+    font-family: "Poppins";
+    padding: 5px;
+    font-size: 1.3rem;
+}
+
+input#botonSumbit, input#botonReset{
+    color: #afafaf;
+}
+
+#botonSumbit:hover, #botonReset:hover{
+    background-color: #888;
+    color: #222;
+}
+
+#botonSumbit:active, #botonReset:active{
+    background-color: #666;
+}
+
+.infoContacto{
+    display: grid;
+    grid-template-areas: 
+    "descripcion mapa mapa"
+    "descripcion mapa mapa"
+    "descripcion mapa mapa";
+    grid-template-columns: 30% 35% 35%;
+    grid-template-rows: 200px 200px 200px;
+    align-items: center;
+}
+
+.descripcionContacto{
+    background:linear-gradient(130.58deg, #ED2E26 9.62%, #A50903 84.33%), #124F86;
+    color: #e3e3e3;
+    grid-area: descripcion;
+    height: 100%;
+}
+
+.descripcionContacto h3{
+    padding: 10px;
+}
+
+.infoPlanta{
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+.infoOficina{
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+
+.mapa{
+    grid-area: mapa;
+    height: 600px;
+}
+
+.mapa iframe{
+    width: 100%;
+    filter: invert(90%) hue-rotate(180deg);
+}
+
+
+
+
+
+
+
+
+@media (max-width: 767px) {
+    
+/*Para el nav*/
+button.navbar-toggler{
+    background-color: #f2f4f3;
+}
+
+
+#offcanvasNavbar{
+    background:linear-gradient(130.58deg, #ED2E26 9.62%, #A50903 84.33%), #124F86;
+}
+
+.offcanvas-title{
+    color: #f2f4f3;
+}
+
+.navbar-nav .active{
+    width: max-content;
+}
+
+}
