@@ -504,6 +504,7 @@ footer img{
     font-size: 1.3rem;
 }
 
+
 #formularioContacto{
     padding-bottom: 50px;
     background-color: black;
@@ -569,6 +570,7 @@ footer img{
     padding: 5px;
     font-size: 1.3rem;
 }
+/*Botones formulario*/
 
 input#botonSumbit, input#botonReset{
     color: #afafaf;
@@ -582,6 +584,8 @@ input#botonSumbit, input#botonReset{
 #botonSumbit:active, #botonReset:active{
     background-color: #666;
 }
+
+/*Descripciones laterales contacto*/
 
 .infoContacto{
     display: grid;
@@ -615,7 +619,7 @@ input#botonSumbit, input#botonReset{
     font-size: 1.2rem;
 }
 
-
+/*Mapa ubicacion empresa*/
 .mapa{
     grid-area: mapa;
     height: 600px;
@@ -632,10 +636,10 @@ input#botonSumbit, input#botonReset{
 
 
 
-
+/*Media mobile*/
 @media (max-width: 767px) {
     
-/*Para el nav*/
+/*Color boton desplegable mobile*/
 button.navbar-toggler{
     background-color: #f2f4f3;
 }
