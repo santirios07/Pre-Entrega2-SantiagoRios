@@ -54,7 +54,7 @@ nav{
 
 /*Imagen portada index*/
 .portadaIndex{
-    height: 600px;
+    height: 100%;
     background-image:linear-gradient(rgba(5,7,12,0.60),rgba(5,7,12,0.60)), url(../img/portada2.webp);
     background-size: cover;
     background-position: center;
@@ -78,6 +78,8 @@ nav{
 .portadaIndex p{
     font-size: 1.8rem;
     font-weight: 400;
+    padding: 50px;
+    margin: 0;
 }
 
 /*Titulo de seccion servicios*/
@@ -235,7 +237,7 @@ footer img{
 
 /*pagina empresa*/
 .portadaEmpresa{
-    height: 200px;
+    height: 100%;
     padding: 50px;
     background-image: linear-gradient(rgba(5,7,12,0.60),rgba(5,7,12,0.60)), url(../img/frente-matadero.png);
     background-size: cover;
@@ -353,7 +355,7 @@ footer img{
 /*pagina servicios*/
 
 .portadaServicios{
-    height: 200px;
+    height: 100%;
     padding: 50px;
     background-image: linear-gradient(rgba(5,7,12,0.60),rgba(5,7,12,0.60)), url(../img/portadaServicios.webp);
     background-size: cover;
@@ -467,6 +469,20 @@ footer img{
 
 /*pagina hacienda*/
 
+.portadaHacienda{
+    background-image:linear-gradient(rgba(5,7,12,0.60),rgba(5,7,12,0.60)), url(../img/portadaHacienda.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    padding: 50px;
+}
+
+.portadaHacienda p{
+    color: #f2f4f3;
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
 .contacto-hacienda{
     display: flex;
     flex-direction: column;
@@ -482,7 +498,7 @@ footer img{
 
 /*portada Contacto*/
 .portadaContacto{
-    height: 200px;
+    height: 100%;
     padding: 50px;
     background-image: linear-gradient(rgba(5,7,12,0.60),rgba(5,7,12,0.60)),url(../img/portada4.jpg);
     background-size: cover;
