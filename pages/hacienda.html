@@ -12,7 +12,7 @@
     <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
     <title>MFSJ - Hacienda</title>
 </head>
-<body id="haciendaBody">
+<body>
     <header>
       <!--nav con bootstrap-->        
         <nav class="navbar navbar-expand-lg bg-md-transparent position-absolute">
@@ -57,50 +57,59 @@
           </nav>
     </header>
     <main>
-        <div>
+        <div class="container-fluid">
             <h1>Hacienda</h1>
             <p>
                 Poseemos la materia prima más destacada a nivel global: la reconocida "Carne Argentina", una marca registrada con renombre mundial. Nuestra reputación se fundamenta en la excelencia de nuestros procesos, que incluyen altos estándares de higiene, controles rigurosos y un esfuerzo constante por alcanzar la máxima calidad. Para lo cual nos basamos en las siguentes políticas.
             </p>
         </div>
-        <section>
-            <article>
-                <div>
-                    <h2>Sustentabilidad</h2>
-                    <p>En Matadero Frigorífico San Justo, adoptamos prácticas sostenibles en todas nuestras operaciones. Desde la gestión responsable de los recursos hasta la implementación de tecnologías eficientes, buscamos reducir nuestro impacto ambiental y contribuir al bienestar a largo plazo de nuestro planeta. Nuestra cadena de suministro está diseñada para minimizar el desperdicio y optimizar la eficiencia.</p>
-                </div>
-                <div>
-                    <h2>Calidad</h2>
-                    <p>La calidad es el núcleo de nuestra filosofía. Desde la selección de los animales hasta el procesamiento y envasado, nos comprometemos a ofrecer productos cárnicos de la más alta calidad. Contamos con rigurosos controles de calidad en todas las etapas de producción, garantizando que cada producto cumpla con los estándares más exigentes.</p>
-                </div>
-                <div>
-                    <h2>Medio Ambiente</h2>
-                    <p>Entendemos la importancia de preservar nuestro entorno. En [Nombre del Matadero Frigorífico], implementamos medidas específicas para minimizar nuestra huella ambiental. Esto incluye la gestión responsable de residuos, la eficiencia energética y la adopción de tecnologías ecoamigables. Trabajamos de la mano con comunidades locales y autoridades ambientales para asegurar un impacto positivo y sostenible.</p>   
-                </div>
-            </article>
+        <section class="container border">
+           <div class="row justify-content-center align-items-center">
+                <h2 class="col-sm-6">Sustentabilidad</h2>
+                <p class="col-sm-6">En Matadero Frigorífico San Justo, adoptamos prácticas sostenibles en todas nuestras operaciones. Desde la gestión responsable de los recursos hasta la implementación de tecnologías eficientes, buscamos reducir nuestro impacto ambiental y contribuir al bienestar a largo plazo de nuestro planeta. Nuestra cadena de suministro está diseñada para minimizar el desperdicio y optimizar la eficiencia.</p>
+          </div>
+          <div class="row justify-content-center align-items-center">
+            <h2 class="col-sm-6 order-last">Calidad</h2>
+            <p class="col-sm-6 order-first">La calidad es el núcleo de nuestra filosofía. Desde la selección de los animales hasta el procesamiento y envasado, nos comprometemos a ofrecer productos cárnicos de la más alta calidad. Contamos con rigurosos controles de calidad en todas las etapas de producción, garantizando que cada producto cumpla con los estándares más exigentes.</p>
+          </div>
+          <div class="row justify-content-center align-items-center">     
+            <h2 class="col-sm-6">Medio Ambiente</h2>
+            <p class="col-sm-6">Entendemos la importancia de preservar nuestro entorno. En Matadero Frigorífico San Justo S.A, implementamos medidas específicas para minimizar nuestra huella ambiental. Esto incluye la gestión responsable de residuos, la eficiencia energética y la adopción de tecnologías ecoamigables. Trabajamos de la mano con comunidades locales y autoridades ambientales para asegurar un impacto positivo y sostenible.</p>
+          </div> 
         </section>
-        <div>
-            <h3>Compra de hacienda vacuna y porcina</h3>
-            <p>
-                Si sos productor o comercializas hacienda bovina o porcina, no dudes en contactarnos. Nuestros compradores recorren el país entero buscando la mejor calidad de hacienda en pie.
-            </p>
-            <button></button>
-        </div>
     </main>
-
+    <aside class="container-fluid">
+      <div class="contacto-hacienda">
+        <h3>Compra de hacienda vacuna y porcina</h3>
+        <p>
+            Si sos productor o comercializas hacienda bovina o porcina, no dudes en contactarnos. Nuestros compradores recorren el país entero buscando la mejor calidad de hacienda en pie.
+        </p>
+        <button class="boton">
+          <a href="contacto.html">Contactar</a>
+        </button>
+      </div>
+  </aside class="container-fluid">
+  <div>
+  
+    <footer>
+      <div class="container-fluid">
+        <div class="row align-items-center justify-content-center">
+          <div  class="col-sm-6">
+            <a href="../index.html">
+              <img src="../img/logonombre.png" alt="Logo de Matadero Frigorifico San Justo">
+            </a>
+          </div>
+          <div class="footer-contacto col-sm-6">
+          <h3>CONTACTANOS</h3>
+          <p>
+              Ruta Nacional Nº 11 Km 564 <br/>
+              San Justo - Santa Fe <br/>
+              Tel: (+54 3496) - 420200 / 420052 <br/>
+              Correo: matadero@sanjustosf.com.ar
+          </p>
+          </div>
+        </div>
+      </div> 
+    </footer>
 </body>
-<footer>
-    <a href="../index.html">
-        <img src="../img/logonombre.png" alt="Logo de Matadero Frigorifico San Justo">
-    </a>
-    <div class="footer-contacto">
-    <h3>CONTACTANOS</h3>
-    <p>
-        Ruta Nacional Nº 11 Km 564 <br/>
-        San Justo - Santa Fe <br/>
-        Tel: (+54 3496) - 420200 / 420052 <br/>
-        Correo: matadero@sanjustosf.com.ar
-    </p>
-    </div>
-</footer>
 </html>

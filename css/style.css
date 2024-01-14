@@ -10,7 +10,6 @@
 
 body {
     font-family: "Poppins", sans-serif;
-    font-weight: 300;
 }
 
 a{
@@ -18,7 +17,6 @@ a{
 }
 
 header{
-    grid-area: header;
     position: relative;
 }
 
@@ -27,7 +25,6 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     width: 100%;
 }
 
@@ -81,10 +78,6 @@ nav{
 .portadaIndex p{
     font-size: 1.8rem;
     font-weight: 400;
-}
-
-main{
-    grid-area: main;
 }
 
 /*Titulo de seccion servicios*/
@@ -214,7 +207,6 @@ footer{
     justify-content: space-between;
     align-items: center;
     padding: 15px;
-    grid-area: footer;
 }
 footer img{
     height: 120px;
@@ -472,6 +464,19 @@ footer img{
     font-size: 1.2rem;
     background-color: #0c0c0c;
 }
+
+/*pagina hacienda*/
+
+.contacto-hacienda{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+
+
 
 
 
