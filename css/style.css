@@ -185,7 +185,6 @@ main{
 }
 
 .quienesSomos div{
-    height: 370px;
     width: 400px;
     padding: 15px;
     text-align: center;
@@ -260,8 +259,7 @@ footer img{
 }
 
 #historiaEmpresa img{
-    height: 500px;
-    width: 380px;
+    width: 500px;
     border-radius: 10px;
     padding: 55px;
 }
@@ -299,12 +297,13 @@ footer img{
     grid-template-rows: 400px;
     gap: 5px;
     justify-items: center;
+    justify-content: center;
 }
 
 .tarjetaMision, .tarjetaValores{
     width: 350px;
     border-radius: 9px;
-    padding: 20px;
+    padding: 10px;
     background-color: #f2f4f3;
     font-size: 1.2rem;
 }
@@ -312,7 +311,7 @@ footer img{
 .tarjetaVision{
     width: 350px;
     border-radius: 9px;
-    padding: 20px;
+    padding: 10px;
     background:linear-gradient(130.58deg, #ED2E26 9.62%, #A50903 84.33%), #124F86;
     font-size: 1.2rem;
 }
@@ -345,25 +344,18 @@ footer img{
 .tarjetaValores ul{
     color: #666;
     list-style: none;
+    padding: 10px;
 }
 
 .tarjetaValores li{
-    padding: 5px;
+    padding-bottom: 5px;
 }
-
-
-.tarjetaValores span{
-    color: #000000;
-}
-
 
 /*Seccion prensa*/
 #prensa{
     padding: 50px;
     text-align: center;
 }
-
-
 
 
 /*pagina servicios*/
