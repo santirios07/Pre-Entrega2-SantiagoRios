@@ -211,7 +211,7 @@ footer{
     padding: 15px;
 }
 footer img{
-    height: 120px;
+    width: 200px;
     margin: 0px;
 }
 
@@ -483,6 +483,16 @@ footer img{
     padding: 10px;
 }
 
+.trazabilidad, .medioAmbiente{
+    background-color: #f4f4f4;
+    padding: 1.5rem;
+}
+
+.calidad, .asideHacienda{
+    background-color: #dcdbdb;
+    padding: 1.5rem;
+}
+
 .contacto-hacienda{
     display: flex;
     flex-direction: column;
@@ -490,10 +500,6 @@ footer img{
     align-items: center;
     padding: 20px;
 }
-
-
-
-
 
 
 /*portada Contacto*/
@@ -644,11 +650,6 @@ input#botonSumbit, input#botonReset{
 }
 
 
-
-
-
-
-
 /*Media mobile*/
 @media (max-width: 767px) {
     
@@ -657,9 +658,9 @@ button.navbar-toggler{
     background-color: #f2f4f3;
 }
 
-
+/*offcanvas y estilo textos*/
 #offcanvasNavbar{
-    background:linear-gradient(130.58deg, #ED2E26 9.62%, #A50903 84.33%), #124F86;
+    background-color:#000000a7;
 }
 
 .offcanvas-title{
@@ -668,6 +669,29 @@ button.navbar-toggler{
 
 .navbar-nav .active{
     width: max-content;
+}
+
+/*Hacienda dimensiones mobile*/
+
+.trazabilidadCuerpo, .calidadCuerpo, .medioAmbienteCuerpo{
+    padding-top: 15px;
+    text-align: center;
+}
+
+/*footer alineado al centro para mobile*/
+
+.footerImagen{
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+.footer-contacto h3{
+    text-align: center;
+}
+
+.footer-contacto p{
+    text-align: center;
 }
 
 }
