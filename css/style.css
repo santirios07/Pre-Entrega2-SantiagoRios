@@ -98,6 +98,13 @@ nav{
     text-align: center;
 }
 
+#servicios-index .row{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+
 .servicios-tarjeta{
     width: 400px;
     border: solid 1px #777;
@@ -106,6 +113,10 @@ nav{
     padding: 20px;
     background-color: #f2f4f3;
     box-shadow: -5px 5px 20px 0px #777;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .servicios-tarjeta h3{
