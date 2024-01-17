@@ -66,6 +66,7 @@ nav{
 
 .portadaIndex h1{
     padding: 190px 0 50px 0;
+    margin: 0;
     text-align: center;
     font-family: "Bebas Neue";
     font-weight: 500;
@@ -91,30 +92,11 @@ nav{
 
 /*Tarjetas servicios index*/
 #servicios-index{
-    height: 600px;
+    height: 100%;
     background-color: #000000;
     padding: 25px;
     text-align: center;
-    display: grid;
-    grid-template-areas: 
-    "titulo titulo"
-    "card1 card2";
-    justify-content: center;
-    align-items: center;
 }
-
-#servicios-index h2:first-child{
-    grid-area: titulo;
-}
-
-#servicios-index div:nth-child(2){
-    grid-area: card1;
-}
-
-#servicios-index div:last-child{
-    grid-area: card2;
-}
-
 
 .servicios-tarjeta{
     width: 400px;
@@ -163,29 +145,34 @@ nav{
 /*Seccion quienes somos*/
 
 .quienesSomos{
-    background-color: #131212;
     padding: 50px;
 }
 
 .quienesSomos article{
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: center;
 }
 
+.quienesSomos .imagenQS{
+    padding: 0px;
+}
 
 .quienesSomos article img{
-    height: 400px;
-    width: 400px;
+    height: auto;
+    max-width: 100%;
     border-radius: 20px 0 0 20px;
 }
 
-.quienesSomos div{
-    width: 400px;
-    padding: 15px;
+.quienesSomos .textoQS{
+    padding: 40px;
     text-align: center;
     background-color: #f2f4f3;
     border-radius: 0 20px 20px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .quienesSomos article div h3{
@@ -682,6 +669,40 @@ button.navbar-toggler{
 
 .footer-contacto p{
     text-align: center;
+}
+
+
+/*Index dimensiones mobile*/
+
+.portadaIndex h1{
+    padding: 140px 3px 30px 3px;
+    font-size: 3.8rem;
+}
+
+.portadaIndex p{
+    font-size: 1.4rem;
+    padding: 20px;
+}
+
+.servicios-tarjeta{
+    margin: 20px 10px;
+}
+
+.quienesSomos{
+    padding: 25px;
+}
+
+.quienesSomos article img{
+    border-radius: 20px 20px 0px 0px;
+}
+
+.quienesSomos .textoQS{
+    border-radius: 0px 0px 20px 20px;
+    padding: 15px;
+}
+
+.textoQS p{
+    font-size: 1.2rem;
 }
 
 
