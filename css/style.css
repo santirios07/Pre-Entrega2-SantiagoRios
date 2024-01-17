@@ -10,6 +10,7 @@
 
 body {
     font-family: "Poppins", sans-serif;
+    background-color: #000000;
 }
 
 a{
@@ -208,7 +209,7 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px;
+    padding: 30px 15px;
 }
 footer img{
     width: 200px;
@@ -368,17 +369,16 @@ footer img{
 
 /*seccion faena y venta*/
 
-#servicioFaena article{
+#servicioFaena{
     padding: 40px;
-    background-color: #0c0c0c;
     display: flex;
     justify-content: center;
     align-items: center;
+    align-content: center;
 }
 
-#servicioVenta article{
+#servicioVenta{
     padding: 40px;
-    background-color: #0c0c0c;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -387,10 +387,10 @@ footer img{
 
 .faenaImagen,.ventaImagen {
     position: relative;
-    margin: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 20px;
 }
 
 
@@ -407,12 +407,12 @@ footer img{
 }
 
 .faenaImagen img{
-    width: 600px;
+    width: 100%;
+    height: auto;
     border-radius: 15px;
 }
 
 .faenaTexto{
-    width: 400px;
     padding: 20px;
     background:linear-gradient(130.58deg, #ED2E26 9.62%, #A50903 84.33%), #124F86;
     border-radius: 15px;
@@ -426,7 +426,7 @@ footer img{
 }
 
 .faenaTexto p, .ventaTexto p{
-    color: #afafaf;
+    color: #d7d7d7;
     padding: 0 10px 5px 10px;
 }
 
@@ -443,13 +443,12 @@ footer img{
 }
 
 .ventaImagen img{
-    width: 600px;
-    height: 400px;
+    width: 100%;
+    height: auto;
     border-radius: 15px;
 }
 
 .ventaTexto{
-    width: 400px;
     padding: 20px;
     background: linear-gradient(130.58deg, #0c07cb 9.62%, #03094f 84.33%), #124F86;
     border-radius: 15px;
@@ -464,7 +463,6 @@ footer img{
     text-align: center;
     padding: 20px;
     font-size: 1.2rem;
-    background-color: #0c0c0c;
 }
 
 /*pagina hacienda*/
@@ -671,13 +669,6 @@ button.navbar-toggler{
     width: max-content;
 }
 
-/*Hacienda dimensiones mobile*/
-
-.trazabilidadCuerpo, .calidadCuerpo, .medioAmbienteCuerpo{
-    padding-top: 15px;
-    text-align: center;
-}
-
 /*footer alineado al centro para mobile*/
 
 .footerImagen{
@@ -693,5 +684,37 @@ button.navbar-toggler{
 .footer-contacto p{
     text-align: center;
 }
+
+
+/*Servicios dimensiones mobile*/
+
+#servicioFaena, #servicioVenta{
+    padding: 10px;
+}
+
+.faenaImagen, .ventaImagen{
+    padding: 0px;
+}
+
+.faenaTexto, .ventaTexto{
+    margin-top: 10px;
+}
+
+.serviciosContacto{
+    padding: 50px;
+}
+
+.serviciosContacto span{
+    display: block;
+    padding-bottom: 10px;
+}
+
+/*Hacienda dimensiones mobile*/
+
+.trazabilidadCuerpo, .calidadCuerpo, .medioAmbienteCuerpo{
+    padding-top: 15px;
+    text-align: center;
+}
+
 
 }
