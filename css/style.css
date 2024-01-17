@@ -350,6 +350,7 @@ footer img{
 #prensa{
     padding: 50px;
     text-align: center;
+    color: #ff0000
 }
 
 
@@ -361,7 +362,6 @@ footer img{
     background-image: linear-gradient(rgba(5,7,12,0.60),rgba(5,7,12,0.60)), url(../img/portadaServicios.webp);
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
     display: flex;
     justify-content: center;
     align-items: end;
@@ -454,7 +454,6 @@ footer img{
     border-radius: 15px;
     text-align: center;
 }
-
 
 /*servicios boton contactanos*/
 
