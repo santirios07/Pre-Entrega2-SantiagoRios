@@ -247,20 +247,18 @@ footer img{
 }
 
 #historiaEmpresa{
-    background-color: #000000;
-    padding: 50px;
+    padding: 20px;
 }
 
 #historiaEmpresa img{
-    width: 500px;
+    max-width: 100%;
     border-radius: 10px;
-    padding: 55px;
+    padding: 50px;
 }
 
 #historiaEmpresa h2{
     font-size: 1.7rem;
     color: #ff0000;
-    width: 600px;
 }
 
 #historiaEmpresa article{
@@ -269,28 +267,23 @@ footer img{
     align-items: center;
 }
 
-#historiaEmpresa div{
-    width: 800px;
+#historiaEmpresa .textoHistoria{
     color: #f2f4f3;
     text-align: left;
 }
 
 #historiaEmpresa p{
     padding: 5px;
-    width: 700px;
     font-size: 1.2rem;
 }
 
 /*Tarjetas mision,vision,valores*/
-#basesEmpresa{
+#basesEmpresa .row{
     padding: 40px;
     background-color: #333;
-    display: grid;
-    grid-template-columns: repeat(3,500px);
-    grid-template-rows: 400px;
-    gap: 5px;
-    justify-items: center;
-    justify-content: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
 }
 
 .tarjetaMision, .tarjetaValores{
@@ -349,6 +342,10 @@ footer img{
     padding: 50px;
     text-align: center;
     color: #ff0000
+}
+
+.videoPrensa{
+    max-width: 100%;
 }
 
 
@@ -715,6 +712,30 @@ button.navbar-toggler{
 .textoQS p{
     font-size: 1.2rem;
 }
+/*Empresa dimesiones mobile*/
+
+#historiaEmpresa img{
+    padding: 20px;
+}
+
+#historiaEmpresa .textoHistoria{
+    text-align: center;
+}
+
+#basesEmpresa .tarjetasEmpresa{
+    padding: 20px;
+    text-align: center;
+}
+
+.tarjetaMision, .tarjetaVision, .tarjetaValores{
+    margin-bottom: 15px;
+}
+
+#prensa{
+    padding: 30px 15px;
+}
+
+
 
 
 /*Servicios dimensiones mobile*/
