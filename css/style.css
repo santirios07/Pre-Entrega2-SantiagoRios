@@ -2,20 +2,6 @@
   font-family: "Bebas Neue";
   src: url(../fonts/BebasNeue-Regular.ttf);
 }
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "Poppins", sans-serif;
-  background-color: #000000;
-}
-
-a {
-  text-decoration: none;
-}
-
 /*Botones*/
 .boton {
   background-color: #333;
@@ -23,6 +9,7 @@ a {
   border-radius: 8px;
   padding: 2px;
   transition: 0.3s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2117647059);
 }
 .boton a {
   display: block;
@@ -45,6 +32,20 @@ a {
   font-size: 3rem;
   font-weight: 500;
   margin-bottom: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #000000;
+}
+
+a {
+  text-decoration: none;
 }
 
 header {
@@ -309,7 +310,7 @@ footer .container .row .footer-contacto p {
 }
 
 /*pagina servicios*/
-.portadaServicios {
+.mainServicios .portadaServicios {
   height: 100%;
   padding: 50px;
   background-image: linear-gradient(rgba(5, 7, 12, 0.6), rgba(5, 7, 12, 0.6)), url(../img/portadaServicios.webp);
@@ -319,33 +320,22 @@ footer .container .row .footer-contacto p {
   justify-content: center;
   align-items: end;
 }
-
-/*seccion faena y venta*/
-#servicioFaena {
+.mainServicios section #servicioFaena {
+  /*seccion faena y venta*/
   padding: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   align-content: center;
 }
-
-#servicioVenta {
-  padding: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row-reverse;
-}
-
-.faenaImagen, .ventaImagen {
+.mainServicios section #servicioFaena .faenaImagen {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 20px;
 }
-
-.faenaImagen h2 {
+.mainServicios section #servicioFaena .faenaImagen h2 {
   font-family: "Bebas neue";
   font-weight: 400;
   color: white;
@@ -356,32 +346,41 @@ footer .container .row .footer-contacto p {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.4470588235);
 }
-
-.faenaImagen img {
+.mainServicios section #servicioFaena .faenaImagen img {
   width: 100%;
   height: auto;
   border-radius: 15px;
 }
-
-.faenaTexto {
+.mainServicios section #servicioFaena .faenaTexto {
   padding: 20px;
   background: linear-gradient(130.58deg, #ED2E26 9.62%, #A50903 84.33%), #124F86;
   border-radius: 15px;
   text-align: center;
 }
-
-.faenaTexto h3, .ventaTexto h3 {
+.mainServicios section #servicioFaena .faenaTexto h3 {
   padding: 10px;
   text-transform: uppercase;
   color: #f2f4f3;
 }
-
-.faenaTexto p, .ventaTexto p {
+.mainServicios section #servicioFaena .faenaTexto p {
   color: #d7d7d7;
   padding: 0 10px 5px 10px;
 }
-
-.ventaImagen h2 {
+.mainServicios section #servicioVenta {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+.mainServicios section #servicioVenta .ventaImagen {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.mainServicios section #servicioVenta .ventaImagen h2 {
   font-family: "Bebas neue";
   font-weight: 400;
   color: white;
@@ -392,22 +391,28 @@ footer .container .row .footer-contacto p {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.4470588235);
 }
-
-.ventaImagen img {
+.mainServicios section #servicioVenta .ventaImagen img {
   width: 100%;
   height: auto;
   border-radius: 15px;
 }
-
-.ventaTexto {
+.mainServicios section #servicioVenta .ventaTexto {
   padding: 20px;
   background: linear-gradient(130.58deg, #0c07cb 9.62%, #03094f 84.33%), #124F86;
   border-radius: 15px;
   text-align: center;
 }
-
-/*servicios boton contactanos*/
-.serviciosContacto {
+.mainServicios section #servicioVenta .ventaTexto h3 {
+  padding: 10px;
+  text-transform: uppercase;
+  color: #f2f4f3;
+}
+.mainServicios section #servicioVenta .ventaTexto p {
+  color: #d7d7d7;
+  padding: 0 10px 5px 10px;
+}
+.mainServicios .serviciosContacto {
+  /*servicios boton contactanos*/
   color: #f2f4f3;
   text-align: center;
   padding: 20px;
@@ -415,31 +420,35 @@ footer .container .row .footer-contacto p {
 }
 
 /*pagina hacienda*/
-.portadaHacienda {
+body .mainHacienda .portadaHacienda {
   background-image: linear-gradient(rgba(5, 7, 12, 0.6), rgba(5, 7, 12, 0.6)), url(../img/portadaHacienda.jpg);
   background-position: center;
   background-size: cover;
   height: 100%;
   padding: 50px;
 }
-
-.portadaHacienda p {
+body .mainHacienda .portadaHacienda p {
   color: #f2f4f3;
   font-size: 1.2rem;
   padding: 10px;
 }
-
-.trazabilidad, .medioAmbiente {
+body .mainHacienda section .trazabilidad {
   background-color: #f4f4f4;
   padding: 1.5rem;
 }
-
-.calidad, .asideHacienda {
+body .mainHacienda section .calidad {
   background-color: #dcdbdb;
   padding: 1.5rem;
 }
-
-.contacto-hacienda {
+body .mainHacienda section .medioAmbiente {
+  background-color: #f4f4f4;
+  padding: 1.5rem;
+}
+body .asideHacienda {
+  background-color: #dcdbdb;
+  padding: 1.5rem;
+}
+body .asideHacienda .contacto-hacienda {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -447,8 +456,11 @@ footer .container .row .footer-contacto p {
   padding: 20px;
 }
 
-/*portada Contacto*/
-.portadaContacto {
+.mainContacto {
+  /*portada Contacto*/
+  /*Descripciones laterales contacto*/
+}
+.mainContacto .portadaContacto {
   height: 100%;
   padding: 50px;
   background-image: linear-gradient(rgba(5, 7, 12, 0.6), rgba(5, 7, 12, 0.6)), url(../img/portada4.jpg);
@@ -458,8 +470,7 @@ footer .container .row .footer-contacto p {
   justify-content: center;
   align-items: end;
 }
-
-.textoFormulario {
+.mainContacto section .textoFormulario {
   text-align: center;
   font-size: 0.9rem;
   background-color: #000000;
@@ -467,8 +478,7 @@ footer .container .row .footer-contacto p {
   padding: 10px;
   font-size: 1.3rem;
 }
-
-#formularioContacto {
+.mainContacto section #formularioContacto {
   padding-bottom: 50px;
   background-color: black;
   color: #afafaf;
@@ -478,48 +488,36 @@ footer .container .row .footer-contacto p {
   align-content: center;
   font-size: 1.3rem;
 }
-
-#formularioContacto div {
+.mainContacto section #formularioContacto div {
   padding: 8px;
+  /*Botones formulario*/
 }
-
-#formularioContacto div:first-child {
+.mainContacto section #formularioContacto div:first-child {
   grid-area: servicio;
   display: flex;
   flex-direction: column;
 }
-
-#formularioContacto div:nth-child(2) {
+.mainContacto section #formularioContacto div:nth-child(2) {
   grid-area: nombre;
   display: flex;
   flex-direction: column;
 }
-
-#formularioContacto div:nth-child(3) {
+.mainContacto section #formularioContacto div:nth-child(3) {
   grid-area: telefono;
   display: flex;
   flex-direction: column;
 }
-
-#formularioContacto div:nth-child(4) {
+.mainContacto section #formularioContacto div:nth-child(4) {
   grid-area: email;
   display: flex;
   flex-direction: column;
 }
-
-#formularioContacto div:nth-child(5) {
+.mainContacto section #formularioContacto div:nth-child(5) {
   grid-area: mensaje;
   display: flex;
   flex-direction: column;
 }
-
-#formularioContacto div:last-child {
-  grid-area: sumbit;
-  display: flex;
-  justify-content: space-between;
-}
-
-#formularioContacto input, #formularioContacto select, #formularioContacto textarea {
+.mainContacto section #formularioContacto div:nth-child(5) textarea {
   background-color: #222;
   border: solid 1px;
   border-color: #333232;
@@ -528,32 +526,59 @@ footer .container .row .footer-contacto p {
   padding: 5px;
   font-size: 1.3rem;
 }
-
-/*Botones formulario*/
-input#botonSumbit, input#botonReset {
+.mainContacto section #formularioContacto div:last-child {
+  grid-area: sumbit;
+  display: flex;
+  justify-content: space-between;
+}
+.mainContacto section #formularioContacto div input {
+  background-color: #222;
+  border: solid 1px;
+  border-color: #333232;
+  color: #777;
+  font-family: "Poppins";
+  padding: 5px;
+  font-size: 1.3rem;
+}
+.mainContacto section #formularioContacto div select {
+  background-color: #222;
+  border: solid 1px;
+  border-color: #333232;
+  color: #777;
+  font-family: "Poppins";
+  padding: 5px;
+  font-size: 1.3rem;
+}
+.mainContacto section #formularioContacto div #botonSumbit {
   color: #afafaf;
 }
-
-#botonSumbit:hover, #botonReset:hover {
+.mainContacto section #formularioContacto div #botonSumbit:hover {
   background-color: #888;
   color: #222;
 }
-
-#botonSumbit:active, #botonReset:active {
+.mainContacto section #formularioContacto div #botonSumbit:active {
   background-color: #666;
 }
-
-/*Descripciones laterales contacto*/
-.infoContacto {
+.mainContacto section #formularioContacto div #botonReset {
+  color: #afafaf;
+}
+.mainContacto section #formularioContacto div #botonReset:hover {
+  background-color: #888;
+  color: #222;
+}
+.mainContacto section #formularioContacto div #botonReset:active {
+  background-color: #666;
+}
+.mainContacto .infoContacto {
   padding: 0px;
   display: grid;
   grid-template-areas: "descripcion mapa" "descripcion mapa" "descripcion mapa";
   grid-template-columns: 35% 65%;
   grid-template-rows: 200px 200px 200px;
   align-items: center;
+  /*Mapa ubicacion empresa*/
 }
-
-.descripcionContacto {
+.mainContacto .infoContacto .descripcionContacto {
   background: linear-gradient(130.58deg, #ED2E26 9.62%, #A50903 84.33%), #124F86;
   color: hwb(0 89% 11%);
   grid-area: descripcion;
@@ -563,36 +588,28 @@ input#botonSumbit, input#botonReset {
   flex-direction: column;
   justify-content: center;
 }
-
-.descripcionContacto h3 {
+.mainContacto .infoContacto .descripcionContacto h3 {
   padding: 10px;
 }
-
-.infoPlanta {
+.mainContacto .infoContacto .descripcionContacto .infoPlanta {
   padding: 10px;
   font-size: 1.1rem;
 }
-
-.infoPlanta h4 {
+.mainContacto .infoContacto .descripcionContacto .infoPlanta h4 {
   text-decoration: underline;
 }
-
-.infoOficina {
+.mainContacto .infoContacto .descripcionContacto .infoOficina {
   padding: 10px;
   font-size: 1.1rem;
 }
-
-.infoOficina h4 {
+.mainContacto .infoContacto .descripcionContacto .infoOficina h4 {
   text-decoration: underline;
 }
-
-/*Mapa ubicacion empresa*/
-.mapa {
+.mainContacto .infoContacto .mapa {
   grid-area: mapa;
   height: 100%;
 }
-
-.mapa iframe {
+.mainContacto .infoContacto .mapa iframe {
   width: 100%;
   filter: invert(90%) hue-rotate(180deg);
 }

@@ -1,0 +1,116 @@
+/*pagina servicios*/
+.mainServicios{
+    .portadaServicios{
+        height: 100%;
+        padding: 50px;
+        background-image: linear-gradient(rgba(5,7,12,0.60),rgba(5,7,12,0.60)), url(../img/portadaServicios.webp);
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+    }
+    section{
+        #servicioFaena{
+            /*seccion faena y venta*/
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            .faenaImagen{
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 20px;
+                h2{
+                    font-family: "Bebas neue";
+                    font-weight: 400;
+                    color: #ffff;
+                    border: solid 2px;
+                    border-radius: 10px;
+                    font-size: 3rem;
+                    padding: 10px;
+                    position: absolute;
+                    background-color: #00000072;
+                }
+                img{
+                    width: 100%;
+                    height: auto;
+                    border-radius: 15px;
+                }
+            }
+            .faenaTexto{
+                padding: 20px;
+                background:linear-gradient(130.58deg, #ED2E26 9.62%, #A50903 84.33%), #124F86;
+                border-radius: 15px;
+                text-align: center;
+                h3{
+                    padding: 10px;
+                    text-transform: uppercase;
+                    color: #f2f4f3;
+                }
+                p{
+                    color: #d7d7d7;
+                    padding: 0 10px 5px 10px;
+                }
+            }
+        }
+        #servicioVenta{
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row-reverse;
+            .ventaImagen {
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 20px;
+                h2{
+                    font-family: "Bebas neue";
+                    font-weight: 400;
+                    color: #ffff;
+                    border: solid 2px;
+                    border-radius: 10px;
+                    font-size: 3rem;
+                    padding: 10px;
+                    position: absolute;
+                    background-color: #00000072;
+                }
+                img{
+                    width: 100%;
+                    height: auto;
+                    border-radius: 15px;
+                }
+            }
+            .ventaTexto{
+                padding: 20px;
+                background: linear-gradient(130.58deg, #0c07cb 9.62%, #03094f 84.33%), #124F86;
+                border-radius: 15px;
+                text-align: center;
+                h3{
+                    padding: 10px;
+                    text-transform: uppercase;
+                    color: #f2f4f3;
+                }
+                p{
+                    color: #d7d7d7;
+                    padding: 0 10px 5px 10px;
+                }
+            }
+        }
+    }
+    .serviciosContacto{
+        /*servicios boton contactanos*/
+        color: #f2f4f3;
+        text-align: center;
+        padding: 20px;
+        font-size: 1.2rem;
+    }
+}
+
+
+

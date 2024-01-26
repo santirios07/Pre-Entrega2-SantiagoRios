@@ -1,0 +1,166 @@
+.mainContacto{
+    /*portada Contacto*/
+    .portadaContacto{
+        height: 100%;
+        padding: 50px;
+        background-image: linear-gradient(rgba(5,7,12,0.60),rgba(5,7,12,0.60)),url(../img/portada4.jpg);
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+    }
+    section{
+        .textoFormulario{
+            text-align: center;
+            font-size: 0.9rem;
+            background-color: #000000;
+            color: #afafaf;
+            padding: 10px;
+            font-size: 1.3rem;
+        }
+        #formularioContacto{
+            padding-bottom: 50px;
+            background-color: black;
+            color: #afafaf;
+            display: grid;
+            grid-template-areas: 
+            "servicio nombre"
+            "telefono email"
+            "mensaje mensaje"
+            "sumbit sumbit";
+            justify-content: center;
+            align-content: center;
+            font-size: 1.3rem;
+            div{
+                padding: 8px;
+                &:first-child{
+                    grid-area: servicio;
+                    display: flex;
+                    flex-direction: column;
+                }
+                &:nth-child(2){
+                    grid-area: nombre;
+                    display: flex;
+                    flex-direction: column;
+                }
+                &:nth-child(3){
+                    grid-area: telefono;
+                    display: flex;
+                    flex-direction: column;
+                }
+                &:nth-child(4){
+                    grid-area: email;
+                    display: flex;
+                    flex-direction: column;
+                }
+                &:nth-child(5){
+                    grid-area: mensaje;
+                    display: flex;
+                    flex-direction: column;
+                    textarea{
+                        background-color: #222;
+                        border: solid 1px;
+                        border-color: #333232;
+                        color: #777;
+                        font-family: "Poppins";
+                        padding: 5px;
+                        font-size: 1.3rem;
+                    }
+                }
+                &:last-child{
+                    grid-area: sumbit;
+                    display: flex;
+                    justify-content: space-between;
+                }
+                input{
+                    background-color: #222;
+                    border: solid 1px;
+                    border-color: #333232;
+                    color: #777;
+                    font-family: "Poppins";
+                    padding: 5px;
+                    font-size: 1.3rem;
+                }
+                select{
+                    background-color: #222;
+                    border: solid 1px;
+                    border-color: #333232;
+                    color: #777;
+                    font-family: "Poppins";
+                    padding: 5px;
+                    font-size: 1.3rem
+                }
+                /*Botones formulario*/
+                #botonSumbit{
+                    color: #afafaf;
+                    &:hover{
+                        background-color: #888;
+                        color: #222;
+                    }
+                    &:active{
+                        background-color: #666;
+                    }
+                }
+                #botonReset{
+                    color: #afafaf;
+                    &:hover{
+                        background-color: #888;
+                        color: #222;
+                    }
+                    &:active{
+                        background-color: #666;
+                    }
+                }
+            }                
+        }
+    }
+    /*Descripciones laterales contacto*/
+    .infoContacto{
+        padding: 0px;
+        display: grid;
+        grid-template-areas: 
+        "descripcion mapa"
+        "descripcion mapa"
+        "descripcion mapa";
+        grid-template-columns: 35% 65%;
+        grid-template-rows: 200px 200px 200px;
+        align-items: center;
+        .descripcionContacto{
+            background:linear-gradient(130.58deg, #ED2E26 9.62%, #A50903 84.33%), #124F86;
+            color: hwb(0 89% 11%);
+            grid-area: descripcion;
+            height: 100%;
+            padding: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            h3{
+                padding: 10px;
+            }
+            .infoPlanta{
+                padding: 10px;
+                font-size: 1.1rem;
+                h4{
+                    text-decoration: underline;
+                }
+            }
+            .infoOficina{
+                padding: 10px;
+                font-size: 1.1rem;
+                h4{
+                    text-decoration: underline;
+                }
+            }
+        }
+        /*Mapa ubicacion empresa*/
+        .mapa{
+            grid-area: mapa;
+            height: 100%;
+            iframe{
+                width: 100%;
+                filter: invert(90%) hue-rotate(180deg);
+            }
+        }
+    }
+}
