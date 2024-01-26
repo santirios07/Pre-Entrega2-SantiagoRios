@@ -2,125 +2,12 @@
     font-family: "Bebas Neue";
     src: url(../fonts/BebasNeue-Regular.ttf);
 }
+
 @import "generales";
 @import "header";
 @import "footer";
 @import "mainIndex";
-
-
-/*pagina empresa*/
-.portadaEmpresa{
-    height: 100%;
-    padding: 50px;
-    background-image: linear-gradient(rgba(5,7,12,0.60),rgba(5,7,12,0.60)), url(../img/frente-matadero.png);
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: end;
-    justify-content: center;
-}
-
-#historiaEmpresa{
-    padding: 20px;
-}
-
-#historiaEmpresa img{
-    max-width: 100%;
-    border-radius: 10px;
-    padding: 50px;
-}
-
-#historiaEmpresa h2{
-    font-size: 1.7rem;
-    color: #ff0000;
-}
-
-#historiaEmpresa article{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#historiaEmpresa .textoHistoria{
-    color: #f2f4f3;
-    text-align: left;
-}
-
-#historiaEmpresa p{
-    padding: 5px;
-    font-size: 1.2rem;
-}
-
-/*Tarjetas mision,vision,valores*/
-#basesEmpresa .row{
-    padding: 40px;
-    background-color: #333;
-    display: flex;
-    justify-content: space-around;
-    align-items: stretch;
-}
-
-.tarjetaMision, .tarjetaValores{
-    width: 350px;
-    border-radius: 9px;
-    padding: 10px;
-    background-color: #f2f4f3;
-    font-size: 1.2rem;
-}
-
-.tarjetaVision{
-    width: 350px;
-    border-radius: 9px;
-    padding: 10px;
-    background:linear-gradient(130.58deg, #ED2E26 9.62%, #A50903 84.33%), #124F86;
-    font-size: 1.2rem;
-}
-
-.tarjetaMision h3, .tarjetaValores h3{
-    font-size: 1.6rem;
-    text-decoration: underline;
-    color: #A50903;
-    padding: 5px;
-}
-
-.tarjetaMision p, .tarjetaValores p{
-    color: #666;
-    padding: 10px;
-}
-
-.tarjetaVision h3{
-    font-size: 1.6rem;
-    text-decoration: underline;
-    color: #e8e8e8;
-    padding: 5px;
-}
-
-.tarjetaVision p{
-    color: #e3e3e3;
-    padding: 10px;
-}
-
-
-.tarjetaValores ul{
-    color: #666;
-    list-style: none;
-    padding: 10px;
-}
-
-.tarjetaValores li{
-    padding-bottom: 5px;
-}
-
-/*Seccion prensa*/
-#prensa{
-    padding: 50px;
-    text-align: center;
-    color: #ff0000
-}
-
-.videoPrensa{
-    max-width: 100%;
-}
+@import "mainEmpresa";
 
 
 /*pagina servicios*/

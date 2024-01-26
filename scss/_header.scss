@@ -8,8 +8,8 @@ header{
         width: 100%;
         div{
             .navbar-brand{
-            /*Logo del menu de navegacion*/
                 img {
+                    /*Logo del menu de navegacion*/
                     transition: .5s;
                     &:hover{
                         transform:scale(1.05);

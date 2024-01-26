@@ -1,6 +1,6 @@
 .mainIndex{
-    /*Imagen portada index*/
     .portadaIndex{
+        /*Imagen portada index*/
         height: 100%;
         background-image:linear-gradient(rgba(5,7,12,0.60),rgba(5,7,12,0.60)), url(../img/portada2.webp);
         background-size: cover;
@@ -65,8 +65,8 @@
             }
         }
     }
-    /*Seccion quienes somos*/
     .quienesSomos{
+        /*Seccion quienes somos*/
         padding: 50px;
         article{
             display: flex;
