@@ -802,8 +802,10 @@ input#botonSumbit,input#botonReset{
     "descripcion"
     "mapa";
     grid-template-columns: 100% 100%;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 600px;
+    align-items: start;
 }
+
 .descripcionContacto{
     align-items: center;
     text-align: center;
