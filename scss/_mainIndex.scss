@@ -1,0 +1,104 @@
+.mainIndex{
+    /*Imagen portada index*/
+    .portadaIndex{
+        height: 100%;
+        background-image:linear-gradient(rgba(5,7,12,0.60),rgba(5,7,12,0.60)), url(../img/portada2.webp);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        text-align: center;
+        color: #ffffff;
+        h1{
+            padding: 190px 0 50px 0;
+            margin: 0;
+            text-align: center;
+            font-family: "Bebas Neue";
+            font-weight: 500;
+            font-size: 5rem;
+            strong{
+                color: #ff0000;
+            }
+        }
+        p{
+            font-size: 1.8rem;
+            font-weight: 400;
+            padding: 50px;
+            margin: 0;
+        }
+    }
+    
+    #servicios-index{
+        height: 100%;
+        background-color: #000000;
+        padding: 25px;
+        text-align: center;
+        /*Titulo de seccion servicios*/
+        h2{
+            color:#f2f4f3;
+            font-size: 2rem;
+        }
+        .row{
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            /*Tarjetas servicios index*/
+            .servicios-tarjeta{
+                width: 400px;
+                border: solid 1px #777;
+                border-radius: 9px;
+                margin: 20px;
+                padding: 20px;
+                background-color: #f2f4f3;
+                box-shadow: -5px 5px 20px 0px #777;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                h3{
+                    font-size: 1.7rem;
+                }
+                p{
+                    color: #666;
+                    padding: 15px;
+                    font-size: 1.25rem;
+                }
+            }
+        }
+    }
+    /*Seccion quienes somos*/
+    .quienesSomos{
+        padding: 50px;
+        article{
+            display: flex;
+            align-items: stretch;
+            justify-content: center;
+            .imagenQS{
+                padding: 0px;
+                img{
+                    height: auto;
+                    max-width: 100%;
+                    border-radius: 20px 0 0 20px;
+                }
+            }
+            .textoQS{
+                padding: 40px;
+                text-align: center;
+                background-color: #f2f4f3;
+                border-radius: 0 20px 20px 0px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                h3{
+                    font-size: 1.7rem;
+                    padding: 5px;
+                }
+                p{
+                    color: #666;
+                    padding: 10px;
+                    font-size: 1.25rem;
+                }
+            }
+        }
+    }
+}

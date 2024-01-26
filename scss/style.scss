@@ -1,0 +1,591 @@
+@font-face {
+    font-family: "Bebas Neue";
+    src: url(../fonts/BebasNeue-Regular.ttf);
+}
+@import "generales";
+@import "header";
+@import "footer";
+@import "mainIndex";
+
+
+/*pagina empresa*/
+.portadaEmpresa{
+    height: 100%;
+    padding: 50px;
+    background-image: linear-gradient(rgba(5,7,12,0.60),rgba(5,7,12,0.60)), url(../img/frente-matadero.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+#historiaEmpresa{
+    padding: 20px;
+}
+
+#historiaEmpresa img{
+    max-width: 100%;
+    border-radius: 10px;
+    padding: 50px;
+}
+
+#historiaEmpresa h2{
+    font-size: 1.7rem;
+    color: #ff0000;
+}
+
+#historiaEmpresa article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#historiaEmpresa .textoHistoria{
+    color: #f2f4f3;
+    text-align: left;
+}
+
+#historiaEmpresa p{
+    padding: 5px;
+    font-size: 1.2rem;
+}
+
+/*Tarjetas mision,vision,valores*/
+#basesEmpresa .row{
+    padding: 40px;
+    background-color: #333;
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.tarjetaMision, .tarjetaValores{
+    width: 350px;
+    border-radius: 9px;
+    padding: 10px;
+    background-color: #f2f4f3;
+    font-size: 1.2rem;
+}
+
+.tarjetaVision{
+    width: 350px;
+    border-radius: 9px;
+    padding: 10px;
+    background:linear-gradient(130.58deg, #ED2E26 9.62%, #A50903 84.33%), #124F86;
+    font-size: 1.2rem;
+}
+
+.tarjetaMision h3, .tarjetaValores h3{
+    font-size: 1.6rem;
+    text-decoration: underline;
+    color: #A50903;
+    padding: 5px;
+}
+
+.tarjetaMision p, .tarjetaValores p{
+    color: #666;
+    padding: 10px;
+}
+
+.tarjetaVision h3{
+    font-size: 1.6rem;
+    text-decoration: underline;
+    color: #e8e8e8;
+    padding: 5px;
+}
+
+.tarjetaVision p{
+    color: #e3e3e3;
+    padding: 10px;
+}
+
+
+.tarjetaValores ul{
+    color: #666;
+    list-style: none;
+    padding: 10px;
+}
+
+.tarjetaValores li{
+    padding-bottom: 5px;
+}
+
+/*Seccion prensa*/
+#prensa{
+    padding: 50px;
+    text-align: center;
+    color: #ff0000
+}
+
+.videoPrensa{
+    max-width: 100%;
+}
+
+
+/*pagina servicios*/
+
+.portadaServicios{
+    height: 100%;
+    padding: 50px;
+    background-image: linear-gradient(rgba(5,7,12,0.60),rgba(5,7,12,0.60)), url(../img/portadaServicios.webp);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+/*seccion faena y venta*/
+
+#servicioFaena{
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+#servicioVenta{
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.faenaImagen,.ventaImagen {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+.faenaImagen h2{
+    font-family: "Bebas neue";
+    font-weight: 400;
+    color: #ffff;
+    border: solid 2px;
+    border-radius: 10px;
+    font-size: 3rem;
+    padding: 10px;
+    position: absolute;
+    background-color: #00000072;
+}
+
+.faenaImagen img{
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.faenaTexto{
+    padding: 20px;
+    background:linear-gradient(130.58deg, #ED2E26 9.62%, #A50903 84.33%), #124F86;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.faenaTexto h3, .ventaTexto h3{
+    padding: 10px;
+    text-transform: uppercase;
+    color: #f2f4f3;
+}
+
+.faenaTexto p, .ventaTexto p{
+    color: #d7d7d7;
+    padding: 0 10px 5px 10px;
+}
+
+.ventaImagen h2{
+    font-family: "Bebas neue";
+    font-weight: 400;
+    color: #ffff;
+    border: solid 2px;
+    border-radius: 10px;
+    font-size: 3rem;
+    padding: 10px;
+    position: absolute;
+    background-color: #00000072;
+}
+
+.ventaImagen img{
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.ventaTexto{
+    padding: 20px;
+    background: linear-gradient(130.58deg, #0c07cb 9.62%, #03094f 84.33%), #124F86;
+    border-radius: 15px;
+    text-align: center;
+}
+
+/*servicios boton contactanos*/
+
+.serviciosContacto{
+    color: #f2f4f3;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2rem;
+}
+
+/*pagina hacienda*/
+
+.portadaHacienda{
+    background-image:linear-gradient(rgba(5,7,12,0.60),rgba(5,7,12,0.60)), url(../img/portadaHacienda.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    padding: 50px;
+}
+
+.portadaHacienda p{
+    color: #f2f4f3;
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+.trazabilidad, .medioAmbiente{
+    background-color: #f4f4f4;
+    padding: 1.5rem;
+}
+
+.calidad, .asideHacienda{
+    background-color: #dcdbdb;
+    padding: 1.5rem;
+}
+
+.contacto-hacienda{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+
+/*portada Contacto*/
+.portadaContacto{
+    height: 100%;
+    padding: 50px;
+    background-image: linear-gradient(rgba(5,7,12,0.60),rgba(5,7,12,0.60)),url(../img/portada4.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.textoFormulario{
+    text-align: center;
+    font-size: 0.9rem;
+    background-color: #000000;
+    color: #afafaf;
+    padding: 10px;
+    font-size: 1.3rem;
+}
+
+
+#formularioContacto{
+    padding-bottom: 50px;
+    background-color: black;
+    color: #afafaf;
+    display: grid;
+    grid-template-areas: 
+    "servicio nombre"
+    "telefono email"
+    "mensaje mensaje"
+    "sumbit sumbit";
+    justify-content: center;
+    align-content: center;
+    font-size: 1.3rem;
+}
+
+#formularioContacto div{
+    padding: 8px;
+}
+
+
+#formularioContacto div:first-child{
+    grid-area: servicio;
+    display: flex;
+    flex-direction: column;
+}
+
+#formularioContacto div:nth-child(2){
+    grid-area: nombre;
+    display: flex;
+    flex-direction: column;
+}
+
+#formularioContacto div:nth-child(3){
+    grid-area: telefono;
+    display: flex;
+    flex-direction: column;
+}
+
+#formularioContacto div:nth-child(4){
+    grid-area: email;
+    display: flex;
+    flex-direction: column;
+}
+
+#formularioContacto div:nth-child(5){
+    grid-area: mensaje;
+    display: flex;
+    flex-direction: column;
+}
+
+#formularioContacto div:last-child{
+    grid-area: sumbit;
+    display: flex;
+    justify-content: space-between;
+}
+
+#formularioContacto input, #formularioContacto select, #formularioContacto textarea {
+    background-color: #222;
+    border: solid 1px;
+    border-color: #333232;
+    color: #777;
+    font-family: "Poppins";
+    padding: 5px;
+    font-size: 1.3rem;
+}
+/*Botones formulario*/
+
+input#botonSumbit, input#botonReset{
+    color: #afafaf;
+}
+
+#botonSumbit:hover, #botonReset:hover{
+    background-color: #888;
+    color: #222;
+}
+
+#botonSumbit:active, #botonReset:active{
+    background-color: #666;
+}
+
+/*Descripciones laterales contacto*/
+
+.infoContacto{
+    padding: 0px;
+    display: grid;
+    grid-template-areas: 
+    "descripcion mapa"
+    "descripcion mapa"
+    "descripcion mapa";
+    grid-template-columns: 35% 65%;
+    grid-template-rows: 200px 200px 200px;
+    align-items: center;
+}
+
+.descripcionContacto{
+    background:linear-gradient(130.58deg, #ED2E26 9.62%, #A50903 84.33%), #124F86;
+    color: hwb(0 89% 11%);
+    grid-area: descripcion;
+    height: 100%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.descripcionContacto h3{
+    padding: 10px;
+}
+
+.infoPlanta{
+    padding: 10px;
+    font-size: 1.1rem;
+}
+
+.infoPlanta h4{
+    text-decoration: underline;
+}
+
+.infoOficina{
+    padding: 10px;
+    font-size: 1.1rem;
+}
+
+.infoOficina h4{
+    text-decoration: underline;
+}
+
+/*Mapa ubicacion empresa*/
+.mapa{
+    grid-area: mapa;
+    height: 100%;
+}
+
+.mapa iframe{
+    width: 100%;
+    filter: invert(90%) hue-rotate(180deg);
+}
+
+
+/*Media mobile*/
+@media (max-width: 767px) {
+    
+/*Color boton desplegable mobile*/
+button.navbar-toggler{
+    background-color: #f2f4f3;
+}
+
+/*offcanvas y estilo textos*/
+#offcanvasNavbar{
+    background-color:#000000a7;
+}
+
+.offcanvas-title{
+    color: #f2f4f3;
+}
+
+.navbar-nav .active{
+    width: max-content;
+}
+
+/*footer alineado al centro para mobile*/
+
+.footerImagen{
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+.footer-contacto h3{
+    text-align: center;
+}
+
+.footer-contacto p{
+    text-align: center;
+}
+
+
+/*Index dimensiones mobile*/
+
+.portadaIndex h1{
+    padding: 140px 3px 30px 3px;
+    font-size: 3.8rem;
+}
+
+.portadaIndex p{
+    font-size: 1.4rem;
+    padding: 20px;
+}
+
+.servicios-tarjeta{
+    margin: 20px 10px;
+}
+
+.quienesSomos{
+    padding: 25px;
+}
+
+.quienesSomos article img{
+    border-radius: 20px 20px 0px 0px;
+}
+
+.quienesSomos .textoQS{
+    border-radius: 0px 0px 20px 20px;
+    padding: 15px;
+}
+
+.textoQS p{
+    font-size: 1.2rem;
+}
+/*Empresa dimesiones mobile*/
+
+#historiaEmpresa img{
+    padding: 20px;
+}
+
+#historiaEmpresa .textoHistoria{
+    text-align: center;
+}
+
+#basesEmpresa .tarjetasEmpresa{
+    padding: 20px;
+    text-align: center;
+}
+
+.tarjetaMision, .tarjetaVision, .tarjetaValores{
+    margin-bottom: 15px;
+}
+
+#prensa{
+    padding: 30px 15px;
+}
+
+
+
+
+/*Servicios dimensiones mobile*/
+
+#servicioFaena, #servicioVenta{
+    padding: 10px;
+}
+
+.faenaImagen, .ventaImagen{
+    padding: 0px;
+}
+
+.faenaTexto, .ventaTexto{
+    margin-top: 10px;
+}
+
+.serviciosContacto{
+    padding: 50px;
+}
+
+.serviciosContacto span{
+    display: block;
+    padding-bottom: 10px;
+}
+
+/*Hacienda dimensiones mobile*/
+
+.trazabilidadCuerpo, .calidadCuerpo, .medioAmbienteCuerpo{
+    padding-top: 15px;
+    text-align: center;
+}
+
+/*Contacto dimensiones mobile*/
+
+#formularioContacto{
+    grid-template-areas: 
+    "servicio" 
+    "nombre"
+    "telefono"
+    "email"
+    "mensaje"
+    "sumbit";
+}
+
+input#botonSumbit,input#botonReset{
+    margin: 2px;
+}
+/*Dimensiones mapa e info*/
+.infoContacto{
+    grid-template-areas: 
+    "descripcion"
+    "mapa";
+    grid-template-columns: 100% 100%;
+    grid-template-rows: 1fr 600px;
+    align-items: start;
+}
+
+.descripcionContacto{
+    align-items: center;
+    text-align: center;
+}
+.mapa{
+    height: auto;
+}
+
+}

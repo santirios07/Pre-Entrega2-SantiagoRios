@@ -1,0 +1,43 @@
+header{
+    position: relative;
+    nav{
+        padding: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        div{
+            .navbar-brand{
+            /*Logo del menu de navegacion*/
+                img {
+                    transition: .5s;
+                    &:hover{
+                        transform:scale(1.05);
+                    }
+                }
+            }
+            div{
+                .offcanvas-body{
+                    div{
+                        ul{
+                            li{
+                                a{
+                                    font-weight: 400;
+                                    
+                                }
+                                .nav-link{
+                                    &:hover{
+                                        border-bottom: solid 0.5px #666;
+                                    }
+                                }
+                                .active{
+                                    border-bottom: solid 1px #ffffff;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
