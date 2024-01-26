@@ -599,21 +599,26 @@ input#botonSumbit, input#botonReset{
 /*Descripciones laterales contacto*/
 
 .infoContacto{
+    padding: 0px;
     display: grid;
     grid-template-areas: 
-    "descripcion mapa mapa"
-    "descripcion mapa mapa"
-    "descripcion mapa mapa";
-    grid-template-columns: 30% 35% 35%;
+    "descripcion mapa"
+    "descripcion mapa"
+    "descripcion mapa";
+    grid-template-columns: 35% 65%;
     grid-template-rows: 200px 200px 200px;
     align-items: center;
 }
 
 .descripcionContacto{
     background:linear-gradient(130.58deg, #ED2E26 9.62%, #A50903 84.33%), #124F86;
-    color: #e3e3e3;
+    color: hwb(0 89% 11%);
     grid-area: descripcion;
     height: 100%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .descripcionContacto h3{
@@ -622,18 +627,26 @@ input#botonSumbit, input#botonReset{
 
 .infoPlanta{
     padding: 10px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+}
+
+.infoPlanta h4{
+    text-decoration: underline;
 }
 
 .infoOficina{
     padding: 10px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+}
+
+.infoOficina h4{
+    text-decoration: underline;
 }
 
 /*Mapa ubicacion empresa*/
 .mapa{
     grid-area: mapa;
-    height: 600px;
+    height: 100%;
 }
 
 .mapa iframe{
@@ -766,6 +779,37 @@ button.navbar-toggler{
 .trazabilidadCuerpo, .calidadCuerpo, .medioAmbienteCuerpo{
     padding-top: 15px;
     text-align: center;
+}
+
+/*Contacto dimensiones mobile*/
+
+#formularioContacto{
+    grid-template-areas: 
+    "servicio" 
+    "nombre"
+    "telefono"
+    "email"
+    "mensaje"
+    "sumbit";
+}
+
+input#botonSumbit,input#botonReset{
+    margin: 2px;
+}
+/*Dimensiones mapa e info*/
+.infoContacto{
+    grid-template-areas: 
+    "descripcion"
+    "mapa";
+    grid-template-columns: 100% 100%;
+    grid-template-rows: 1fr 1fr;
+}
+.descripcionContacto{
+    align-items: center;
+    text-align: center;
+}
+.mapa{
+    height: auto;
 }
 
 
