@@ -15,8 +15,14 @@
             font-family: "Bebas Neue";
             font-weight: 500;
             font-size: 5rem;
+            @include mobile{
+                /*Index dimensiones mobile*/
+                padding: 140px 3px 30px 3px;
+                font-size: 3.8rem;
+            }
             strong{
                 color: #ff0000;
+                font-family: "Bebas Neue";
             }
         }
         p{
@@ -24,6 +30,10 @@
             font-weight: 400;
             padding: 50px;
             margin: 0;
+            @include mobile{
+                font-size: 1.4rem;
+                padding: 20px;
+            }
         }
     }
     
@@ -54,6 +64,9 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                @include mobile{
+                    margin: 20px 10px;
+                }
                 h3{
                     font-size: 1.7rem;
                 }
@@ -68,6 +81,9 @@
     .quienesSomos{
         /*Seccion quienes somos*/
         padding: 50px;
+        @include mobile{
+            padding: 25px;
+        }
         article{
             display: flex;
             align-items: stretch;
@@ -78,6 +94,9 @@
                     height: auto;
                     max-width: 100%;
                     border-radius: 20px 0 0 20px;
+                    @include mobile{
+                        border-radius: 20px 20px 0px 0px;
+                    }
                 }
             }
             .textoQS{
@@ -89,6 +108,10 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                @include mobile{
+                    border-radius: 0px 0px 20px 20px;
+                    padding: 15px;
+                }
                 h3{
                     font-size: 1.7rem;
                     padding: 5px;
@@ -97,6 +120,9 @@
                     color: #666;
                     padding: 10px;
                     font-size: 1.25rem;
+                    @include mobile{
+                        font-size: 1.2rem;
+                    }
                 }
             }
         }

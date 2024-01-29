@@ -3,177 +3,18 @@
     src: url(../fonts/BebasNeue-Regular.ttf);
 }
 
+@import "base/generales";
 @import "utilities/variables";
+@import "utilities/mixins";
+
+
 @import "components/botones";
 @import "components/titulosPaginas";
-@import "layout/generales";
-@import "layout/header";
-@import "layout/footer";
+
+@import "base/header";
+@import "base/footer";
 @import "views/mainIndex";
 @import "views/mainEmpresa";
 @import "views/mainServicios";
 @import "views/mainHacienda";
 @import "views/mainContacto";
-
-
-
-/*Media mobile*/
-@media (max-width: 767px) {
-    
-/*Color boton desplegable mobile*/
-button.navbar-toggler{
-    background-color: #f2f4f3;
-}
-
-/*offcanvas y estilo textos*/
-#offcanvasNavbar{
-    background-color:#000000a7;
-}
-
-.offcanvas-title{
-    color: #f2f4f3;
-}
-
-.navbar-nav .active{
-    width: max-content;
-}
-
-/*footer alineado al centro para mobile*/
-
-.footerImagen{
-    display: flex;
-    justify-content: center;
-    padding: 1.5rem;
-}
-
-.footer-contacto h3{
-    text-align: center;
-}
-
-.footer-contacto p{
-    text-align: center;
-}
-
-
-/*Index dimensiones mobile*/
-
-.portadaIndex h1{
-    padding: 140px 3px 30px 3px;
-    font-size: 3.8rem;
-}
-
-.portadaIndex p{
-    font-size: 1.4rem;
-    padding: 20px;
-}
-
-.servicios-tarjeta{
-    margin: 20px 10px;
-}
-
-.quienesSomos{
-    padding: 25px;
-}
-
-.quienesSomos article img{
-    border-radius: 20px 20px 0px 0px;
-}
-
-.quienesSomos .textoQS{
-    border-radius: 0px 0px 20px 20px;
-    padding: 15px;
-}
-
-.textoQS p{
-    font-size: 1.2rem;
-}
-/*Empresa dimesiones mobile*/
-
-#historiaEmpresa img{
-    padding: 20px;
-}
-
-#historiaEmpresa .textoHistoria{
-    text-align: center;
-}
-
-#basesEmpresa .tarjetasEmpresa{
-    padding: 20px;
-    text-align: center;
-}
-
-.tarjetaMision, .tarjetaVision, .tarjetaValores{
-    margin-bottom: 15px;
-}
-
-#prensa{
-    padding: 30px 15px;
-}
-
-
-
-
-/*Servicios dimensiones mobile*/
-
-#servicioFaena, #servicioVenta{
-    padding: 10px;
-}
-
-.faenaImagen, .ventaImagen{
-    padding: 0px;
-}
-
-.faenaTexto, .ventaTexto{
-    margin-top: 10px;
-}
-
-.serviciosContacto{
-    padding: 50px;
-}
-
-.serviciosContacto span{
-    display: block;
-    padding-bottom: 10px;
-}
-
-/*Hacienda dimensiones mobile*/
-
-.trazabilidadCuerpo, .calidadCuerpo, .medioAmbienteCuerpo{
-    padding-top: 15px;
-    text-align: center;
-}
-
-/*Contacto dimensiones mobile*/
-
-#formularioContacto{
-    grid-template-areas: 
-    "servicio" 
-    "nombre"
-    "telefono"
-    "email"
-    "mensaje"
-    "sumbit";
-}
-
-input#botonSumbit,input#botonReset{
-    margin: 2px;
-}
-/*Dimensiones mapa e info*/
-.infoContacto{
-    grid-template-areas: 
-    "descripcion"
-    "mapa";
-    grid-template-columns: 100% 100%;
-    grid-template-rows: 1fr 600px;
-    align-items: start;
-}
-
-.descripcionContacto{
-    align-items: center;
-    text-align: center;
-}
-.mapa{
-    height: auto;
-}
-
-}

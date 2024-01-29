@@ -32,6 +32,15 @@
             justify-content: center;
             align-content: center;
             font-size: 1.3rem;
+            @include mobile{
+                grid-template-areas: 
+                "servicio" 
+                "nombre"
+                "telefono"
+                "email"
+                "mensaje"
+                "sumbit";
+            }
             div{
                 padding: 8px;
                 &:first-child{
@@ -101,6 +110,9 @@
                     &:active{
                         background-color: #666;
                     }
+                    @include mobile{
+                        margin: 2px;
+                    }
                 }
                 #botonReset{
                     color: #afafaf;
@@ -110,6 +122,9 @@
                     }
                     &:active{
                         background-color: #666;
+                    }
+                    @include mobile{
+                        margin: 2px;
                     }
                 }
             }                
@@ -126,6 +141,15 @@
         grid-template-columns: 35% 65%;
         grid-template-rows: 200px 200px 200px;
         align-items: center;
+        @include mobile{
+            /*Dimensiones mapa e info*/
+            grid-template-areas: 
+            "descripcion"
+            "mapa";
+            grid-template-columns: 100% 100%;
+            grid-template-rows: 1fr 600px;
+            align-items: start;
+        }
         .descripcionContacto{
             background:linear-gradient(130.58deg, #ED2E26 9.62%, #A50903 84.33%), #124F86;
             color: hwb(0 89% 11%);
@@ -152,6 +176,10 @@
                     text-decoration: underline;
                 }
             }
+            @include mobile{
+                align-items: center;
+                text-align: center;
+            }
         }
         /*Mapa ubicacion empresa*/
         .mapa{
@@ -160,6 +188,9 @@
             iframe{
                 width: 100%;
                 filter: invert(90%) hue-rotate(180deg);
+            }
+            @include mobile{
+                height: auto;
             }
         }
     }

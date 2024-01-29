@@ -40,6 +40,9 @@
                     height: auto;
                     border-radius: 15px;
                 }
+                @include mobile{
+                    padding: 0px;
+                }
             }
             .faenaTexto{
                 padding: 20px;
@@ -55,6 +58,12 @@
                     color: #d7d7d7;
                     padding: 0 10px 5px 10px;
                 }
+                @include mobile{
+                    margin-top: 10px;
+                }
+            }
+            @include mobile{
+                padding: 10px;
             }
         }
         #servicioVenta{
@@ -85,6 +94,9 @@
                     height: auto;
                     border-radius: 15px;
                 }
+                @include mobile{
+                    padding: 0px;
+                }
             }
             .ventaTexto{
                 padding: 20px;
@@ -100,6 +112,12 @@
                     color: #d7d7d7;
                     padding: 0 10px 5px 10px;
                 }
+                @include mobile{
+                    margin-top: 10px;
+                }
+            }
+            @include mobile{
+                padding: 10px;
             }
         }
     }
@@ -109,6 +127,14 @@
         text-align: center;
         padding: 20px;
         font-size: 1.2rem;
+        @include mobile{
+            padding: 50px;
+        }
+        span{
+            @include mobile{
+                padding-bottom: 10px;
+            }
+        }
     }
 }
 

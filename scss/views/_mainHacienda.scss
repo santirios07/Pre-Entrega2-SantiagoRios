@@ -17,14 +17,32 @@ body{
             .trazabilidad{
                 background-color: #f4f4f4;
                 padding: 1.5rem;
+                .trazabilidadCuerpo{
+                    @include mobile{
+                        padding-top: 15px;
+                        text-align: center;
+                    }
+                }
             }
             .calidad{
                 background-color: #dcdbdb;
                 padding: 1.5rem;
+                .calidadCuerpo{
+                    @include mobile{
+                        padding-top: 15px;
+                        text-align: center;
+                    }
+                }
             }
             .medioAmbiente{
                 background-color: #f4f4f4;
                 padding: 1.5rem;
+                .medioAmbienteCuerpo{
+                    @include mobile{
+                        padding-top: 15px;
+                        text-align: center;
+                    }
+                }
             }
         }
     }

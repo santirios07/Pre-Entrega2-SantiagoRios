@@ -2,6 +2,19 @@
   font-family: "Bebas Neue";
   src: url(../fonts/BebasNeue-Regular.ttf);
 }
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+* body {
+  background-color: #000000;
+}
+* body a {
+  text-decoration: none;
+}
+
+/*Media mobile mixin*/
 /*Botones*/
 .boton {
   background-color: #333;
@@ -34,20 +47,6 @@
   margin-bottom: 0;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "Poppins", sans-serif;
-  background-color: #000000;
-}
-
-a {
-  text-decoration: none;
-}
-
 header {
   position: relative;
 }
@@ -65,14 +64,41 @@ header nav div .navbar-brand img {
 header nav div .navbar-brand img:hover {
   transform: scale(1.05);
 }
+@media screen and (max-width: 767px) {
+  header nav div .navbar-toggler {
+    /*Color boton desplegable mobile*/
+    background-color: #f2f4f3;
+  }
+}
+@media screen and (max-width: 767px) {
+  header nav div #offcanvasNavbar {
+    /*offcanvas y estilo textos*/
+    background-color: rgba(0, 0, 0, 0.6549019608);
+  }
+}
+@media screen and (max-width: 767px) {
+  header nav div .offcanvas-title {
+    color: #f2f4f3;
+  }
+}
 header nav div div .offcanvas-body div ul li a {
   font-weight: 400;
 }
 header nav div div .offcanvas-body div ul li .nav-link:hover {
   border-bottom: solid 0.5px #666;
 }
+@media screen and (max-width: 767px) {
+  header nav div div .offcanvas-body div ul li .nav-link:hover {
+    width: max-content;
+  }
+}
 header nav div div .offcanvas-body div ul li .active {
   border-bottom: solid 1px #ffffff;
+}
+@media screen and (max-width: 767px) {
+  header nav div div .offcanvas-body div ul li .active {
+    width: max-content;
+  }
 }
 
 /*Footer*/
@@ -84,6 +110,14 @@ footer {
   align-items: center;
   padding: 30px 15px;
 }
+@media screen and (max-width: 767px) {
+  footer .container .row .footerImagen {
+    /*footer alineado al centro para mobile*/
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem;
+  }
+}
 footer .container .row .footerImagen a img {
   width: 200px;
   margin: 0px;
@@ -93,8 +127,18 @@ footer .container .row .footer-contacto h3 {
   text-align: right;
   padding-bottom: 10px;
 }
+@media screen and (max-width: 767px) {
+  footer .container .row .footer-contacto h3 {
+    text-align: center;
+  }
+}
 footer .container .row .footer-contacto p {
   text-align: right;
+}
+@media screen and (max-width: 767px) {
+  footer .container .row .footer-contacto p {
+    text-align: center;
+  }
 }
 
 .mainIndex .portadaIndex {
@@ -115,14 +159,28 @@ footer .container .row .footer-contacto p {
   font-weight: 500;
   font-size: 5rem;
 }
+@media screen and (max-width: 767px) {
+  .mainIndex .portadaIndex h1 {
+    /*Index dimensiones mobile*/
+    padding: 140px 3px 30px 3px;
+    font-size: 3.8rem;
+  }
+}
 .mainIndex .portadaIndex h1 strong {
   color: #ff0000;
+  font-family: "Bebas Neue";
 }
 .mainIndex .portadaIndex p {
   font-size: 1.8rem;
   font-weight: 400;
   padding: 50px;
   margin: 0;
+}
+@media screen and (max-width: 767px) {
+  .mainIndex .portadaIndex p {
+    font-size: 1.4rem;
+    padding: 20px;
+  }
 }
 .mainIndex #servicios-index {
   height: 100%;
@@ -154,6 +212,11 @@ footer .container .row .footer-contacto p {
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 767px) {
+  .mainIndex #servicios-index .row .servicios-tarjeta {
+    margin: 20px 10px;
+  }
+}
 .mainIndex #servicios-index .row .servicios-tarjeta h3 {
   font-size: 1.7rem;
 }
@@ -165,6 +228,11 @@ footer .container .row .footer-contacto p {
 .mainIndex .quienesSomos {
   /*Seccion quienes somos*/
   padding: 50px;
+}
+@media screen and (max-width: 767px) {
+  .mainIndex .quienesSomos {
+    padding: 25px;
+  }
 }
 .mainIndex .quienesSomos article {
   display: flex;
@@ -179,6 +247,11 @@ footer .container .row .footer-contacto p {
   max-width: 100%;
   border-radius: 20px 0 0 20px;
 }
+@media screen and (max-width: 767px) {
+  .mainIndex .quienesSomos article .imagenQS img {
+    border-radius: 20px 20px 0px 0px;
+  }
+}
 .mainIndex .quienesSomos article .textoQS {
   padding: 40px;
   text-align: center;
@@ -189,6 +262,12 @@ footer .container .row .footer-contacto p {
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 767px) {
+  .mainIndex .quienesSomos article .textoQS {
+    border-radius: 0px 0px 20px 20px;
+    padding: 15px;
+  }
+}
 .mainIndex .quienesSomos article .textoQS h3 {
   font-size: 1.7rem;
   padding: 5px;
@@ -197,6 +276,11 @@ footer .container .row .footer-contacto p {
   color: #666;
   padding: 10px;
   font-size: 1.25rem;
+}
+@media screen and (max-width: 767px) {
+  .mainIndex .quienesSomos article .textoQS p {
+    font-size: 1.2rem;
+  }
 }
 
 /*pagina empresa*/
@@ -222,9 +306,19 @@ footer .container .row .footer-contacto p {
   border-radius: 10px;
   padding: 50px;
 }
+@media screen and (max-width: 767px) {
+  .mainEmpresa #historiaEmpresa article .row div img {
+    padding: 20px;
+  }
+}
 .mainEmpresa #historiaEmpresa article .row .textoHistoria {
   color: #f2f4f3;
   text-align: left;
+}
+@media screen and (max-width: 767px) {
+  .mainEmpresa #historiaEmpresa article .row .textoHistoria {
+    text-align: center;
+  }
 }
 .mainEmpresa #historiaEmpresa article .row .textoHistoria h2 {
   font-size: 1.7rem;
@@ -237,10 +331,15 @@ footer .container .row .footer-contacto p {
 .mainEmpresa #basesEmpresa article .tarjetasEmpresa {
   /*Tarjetas mision,vision,valores*/
   padding: 40px;
-  background-color: #333;
   display: flex;
   justify-content: space-around;
   align-items: stretch;
+}
+@media screen and (max-width: 767px) {
+  .mainEmpresa #basesEmpresa article .tarjetasEmpresa {
+    padding: 20px;
+    text-align: center;
+  }
 }
 .mainEmpresa #basesEmpresa article .tarjetasEmpresa .tarjetaMision {
   width: 350px;
@@ -259,6 +358,11 @@ footer .container .row .footer-contacto p {
   color: #666;
   padding: 10px;
 }
+@media screen and (max-width: 767px) {
+  .mainEmpresa #basesEmpresa article .tarjetasEmpresa .tarjetaMision {
+    margin-bottom: 15px;
+  }
+}
 .mainEmpresa #basesEmpresa article .tarjetasEmpresa .tarjetaVision {
   width: 350px;
   border-radius: 9px;
@@ -275,6 +379,11 @@ footer .container .row .footer-contacto p {
 .mainEmpresa #basesEmpresa article .tarjetasEmpresa .tarjetaVision p {
   color: #e3e3e3;
   padding: 10px;
+}
+@media screen and (max-width: 767px) {
+  .mainEmpresa #basesEmpresa article .tarjetasEmpresa .tarjetaVision {
+    margin-bottom: 15px;
+  }
 }
 .mainEmpresa #basesEmpresa article .tarjetasEmpresa .tarjetaValores {
   width: 350px;
@@ -297,6 +406,11 @@ footer .container .row .footer-contacto p {
 .mainEmpresa #basesEmpresa article .tarjetasEmpresa .tarjetaValores ul li {
   padding-bottom: 5px;
 }
+@media screen and (max-width: 767px) {
+  .mainEmpresa #basesEmpresa article .tarjetasEmpresa .tarjetaValores {
+    margin-bottom: 15px;
+  }
+}
 .mainEmpresa #prensa {
   /*Seccion prensa*/
   padding: 50px;
@@ -307,6 +421,11 @@ footer .container .row .footer-contacto p {
 }
 .mainEmpresa #prensa article .row div .videoPrensa {
   max-width: 100%;
+}
+@media screen and (max-width: 767px) {
+  .mainEmpresa #prensa {
+    padding: 30px 15px;
+  }
 }
 
 /*pagina servicios*/
@@ -351,6 +470,11 @@ footer .container .row .footer-contacto p {
   height: auto;
   border-radius: 15px;
 }
+@media screen and (max-width: 767px) {
+  .mainServicios section #servicioFaena .faenaImagen {
+    padding: 0px;
+  }
+}
 .mainServicios section #servicioFaena .faenaTexto {
   padding: 20px;
   background: linear-gradient(130.58deg, #ED2E26 9.62%, #A50903 84.33%), #124F86;
@@ -365,6 +489,16 @@ footer .container .row .footer-contacto p {
 .mainServicios section #servicioFaena .faenaTexto p {
   color: #d7d7d7;
   padding: 0 10px 5px 10px;
+}
+@media screen and (max-width: 767px) {
+  .mainServicios section #servicioFaena .faenaTexto {
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mainServicios section #servicioFaena {
+    padding: 10px;
+  }
 }
 .mainServicios section #servicioVenta {
   padding: 40px;
@@ -396,6 +530,11 @@ footer .container .row .footer-contacto p {
   height: auto;
   border-radius: 15px;
 }
+@media screen and (max-width: 767px) {
+  .mainServicios section #servicioVenta .ventaImagen {
+    padding: 0px;
+  }
+}
 .mainServicios section #servicioVenta .ventaTexto {
   padding: 20px;
   background: linear-gradient(130.58deg, #0c07cb 9.62%, #03094f 84.33%), #124F86;
@@ -411,12 +550,32 @@ footer .container .row .footer-contacto p {
   color: #d7d7d7;
   padding: 0 10px 5px 10px;
 }
+@media screen and (max-width: 767px) {
+  .mainServicios section #servicioVenta .ventaTexto {
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mainServicios section #servicioVenta {
+    padding: 10px;
+  }
+}
 .mainServicios .serviciosContacto {
   /*servicios boton contactanos*/
   color: #f2f4f3;
   text-align: center;
   padding: 20px;
   font-size: 1.2rem;
+}
+@media screen and (max-width: 767px) {
+  .mainServicios .serviciosContacto {
+    padding: 50px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mainServicios .serviciosContacto span {
+    padding-bottom: 10px;
+  }
 }
 
 /*pagina hacienda*/
@@ -436,13 +595,31 @@ body .mainHacienda section .trazabilidad {
   background-color: #f4f4f4;
   padding: 1.5rem;
 }
+@media screen and (max-width: 767px) {
+  body .mainHacienda section .trazabilidad .trazabilidadCuerpo {
+    padding-top: 15px;
+    text-align: center;
+  }
+}
 body .mainHacienda section .calidad {
   background-color: #dcdbdb;
   padding: 1.5rem;
 }
+@media screen and (max-width: 767px) {
+  body .mainHacienda section .calidad .calidadCuerpo {
+    padding-top: 15px;
+    text-align: center;
+  }
+}
 body .mainHacienda section .medioAmbiente {
   background-color: #f4f4f4;
   padding: 1.5rem;
+}
+@media screen and (max-width: 767px) {
+  body .mainHacienda section .medioAmbiente .medioAmbienteCuerpo {
+    padding-top: 15px;
+    text-align: center;
+  }
 }
 body .asideHacienda {
   background-color: #dcdbdb;
@@ -487,6 +664,11 @@ body .asideHacienda .contacto-hacienda {
   justify-content: center;
   align-content: center;
   font-size: 1.3rem;
+}
+@media screen and (max-width: 767px) {
+  .mainContacto section #formularioContacto {
+    grid-template-areas: "servicio" "nombre" "telefono" "email" "mensaje" "sumbit";
+  }
 }
 .mainContacto section #formularioContacto div {
   padding: 8px;
@@ -559,6 +741,11 @@ body .asideHacienda .contacto-hacienda {
 .mainContacto section #formularioContacto div #botonSumbit:active {
   background-color: #666;
 }
+@media screen and (max-width: 767px) {
+  .mainContacto section #formularioContacto div #botonSumbit {
+    margin: 2px;
+  }
+}
 .mainContacto section #formularioContacto div #botonReset {
   color: #afafaf;
 }
@@ -569,6 +756,11 @@ body .asideHacienda .contacto-hacienda {
 .mainContacto section #formularioContacto div #botonReset:active {
   background-color: #666;
 }
+@media screen and (max-width: 767px) {
+  .mainContacto section #formularioContacto div #botonReset {
+    margin: 2px;
+  }
+}
 .mainContacto .infoContacto {
   padding: 0px;
   display: grid;
@@ -577,6 +769,15 @@ body .asideHacienda .contacto-hacienda {
   grid-template-rows: 200px 200px 200px;
   align-items: center;
   /*Mapa ubicacion empresa*/
+}
+@media screen and (max-width: 767px) {
+  .mainContacto .infoContacto {
+    /*Dimensiones mapa e info*/
+    grid-template-areas: "descripcion" "mapa";
+    grid-template-columns: 100% 100%;
+    grid-template-rows: 1fr 600px;
+    align-items: start;
+  }
 }
 .mainContacto .infoContacto .descripcionContacto {
   background: linear-gradient(130.58deg, #ED2E26 9.62%, #A50903 84.33%), #124F86;
@@ -605,6 +806,12 @@ body .asideHacienda .contacto-hacienda {
 .mainContacto .infoContacto .descripcionContacto .infoOficina h4 {
   text-decoration: underline;
 }
+@media screen and (max-width: 767px) {
+  .mainContacto .infoContacto .descripcionContacto {
+    align-items: center;
+    text-align: center;
+  }
+}
 .mainContacto .infoContacto .mapa {
   grid-area: mapa;
   height: 100%;
@@ -613,118 +820,8 @@ body .asideHacienda .contacto-hacienda {
   width: 100%;
   filter: invert(90%) hue-rotate(180deg);
 }
-
-/*Media mobile*/
-@media (max-width: 767px) {
-  /*Color boton desplegable mobile*/
-  button.navbar-toggler {
-    background-color: #f2f4f3;
-  }
-  /*offcanvas y estilo textos*/
-  #offcanvasNavbar {
-    background-color: rgba(0, 0, 0, 0.6549019608);
-  }
-  .offcanvas-title {
-    color: #f2f4f3;
-  }
-  .navbar-nav .active {
-    width: max-content;
-  }
-  /*footer alineado al centro para mobile*/
-  .footerImagen {
-    display: flex;
-    justify-content: center;
-    padding: 1.5rem;
-  }
-  .footer-contacto h3 {
-    text-align: center;
-  }
-  .footer-contacto p {
-    text-align: center;
-  }
-  /*Index dimensiones mobile*/
-  .portadaIndex h1 {
-    padding: 140px 3px 30px 3px;
-    font-size: 3.8rem;
-  }
-  .portadaIndex p {
-    font-size: 1.4rem;
-    padding: 20px;
-  }
-  .servicios-tarjeta {
-    margin: 20px 10px;
-  }
-  .quienesSomos {
-    padding: 25px;
-  }
-  .quienesSomos article img {
-    border-radius: 20px 20px 0px 0px;
-  }
-  .quienesSomos .textoQS {
-    border-radius: 0px 0px 20px 20px;
-    padding: 15px;
-  }
-  .textoQS p {
-    font-size: 1.2rem;
-  }
-  /*Empresa dimesiones mobile*/
-  #historiaEmpresa img {
-    padding: 20px;
-  }
-  #historiaEmpresa .textoHistoria {
-    text-align: center;
-  }
-  #basesEmpresa .tarjetasEmpresa {
-    padding: 20px;
-    text-align: center;
-  }
-  .tarjetaMision, .tarjetaVision, .tarjetaValores {
-    margin-bottom: 15px;
-  }
-  #prensa {
-    padding: 30px 15px;
-  }
-  /*Servicios dimensiones mobile*/
-  #servicioFaena, #servicioVenta {
-    padding: 10px;
-  }
-  .faenaImagen, .ventaImagen {
-    padding: 0px;
-  }
-  .faenaTexto, .ventaTexto {
-    margin-top: 10px;
-  }
-  .serviciosContacto {
-    padding: 50px;
-  }
-  .serviciosContacto span {
-    display: block;
-    padding-bottom: 10px;
-  }
-  /*Hacienda dimensiones mobile*/
-  .trazabilidadCuerpo, .calidadCuerpo, .medioAmbienteCuerpo {
-    padding-top: 15px;
-    text-align: center;
-  }
-  /*Contacto dimensiones mobile*/
-  #formularioContacto {
-    grid-template-areas: "servicio" "nombre" "telefono" "email" "mensaje" "sumbit";
-  }
-  input#botonSumbit, input#botonReset {
-    margin: 2px;
-  }
-  /*Dimensiones mapa e info*/
-  .infoContacto {
-    grid-template-areas: "descripcion" "mapa";
-    grid-template-columns: 100% 100%;
-    grid-template-rows: 1fr 600px;
-    align-items: start;
-  }
-  .descripcionContacto {
-    align-items: center;
-    text-align: center;
-  }
-  .mapa {
+@media screen and (max-width: 767px) {
+  .mainContacto .infoContacto .mapa {
     height: auto;
   }
 }

@@ -16,6 +16,23 @@ header{
                     }
                 }
             }
+            .navbar-toggler{
+                @include mobile{
+                    /*Color boton desplegable mobile*/
+                    background-color: #f2f4f3;
+                }
+            }
+            #offcanvasNavbar{
+                @include mobile{
+                    /*offcanvas y estilo textos*/
+                    background-color:#000000a7;
+                }
+            }
+            .offcanvas-title{
+                @include mobile{
+                    color: #f2f4f3;
+                }
+            }
             div{
                 .offcanvas-body{
                     div{
@@ -28,10 +45,16 @@ header{
                                 .nav-link{
                                     &:hover{
                                         border-bottom: solid 0.5px #666;
+                                        @include mobile{
+                                            width: max-content;
+                                        }
                                     }
                                 }
                                 .active{
                                     border-bottom: solid 1px #ffffff;
+                                    @include mobile{
+                                        width: max-content;
+                                    }
                                 }
                             }
                         }
