@@ -6,9 +6,7 @@
         background-image: linear-gradient(rgba(5,7,12,0.60),rgba(5,7,12,0.60)),url(../img/portada4.jpg);
         background-size: cover;
         background-position: center;
-        display: flex;
-        justify-content: center;
-        align-items: end;
+        @include flex(flex, row, center, end);
     }
     section{
         .textoFormulario{
@@ -44,29 +42,19 @@
             div{
                 padding: 8px;
                 &:first-child{
-                    grid-area: servicio;
-                    display: flex;
-                    flex-direction: column;
+                    @include itemsFormulario (servicio, flex, column);
                 }
                 &:nth-child(2){
-                    grid-area: nombre;
-                    display: flex;
-                    flex-direction: column;
+                    @include itemsFormulario (nombre, flex, column);
                 }
                 &:nth-child(3){
-                    grid-area: telefono;
-                    display: flex;
-                    flex-direction: column;
+                    @include itemsFormulario (telefono, flex, column);
                 }
                 &:nth-child(4){
-                    grid-area: email;
-                    display: flex;
-                    flex-direction: column;
+                    @include itemsFormulario (email, flex, column);
                 }
                 &:nth-child(5){
-                    grid-area: mensaje;
-                    display: flex;
-                    flex-direction: column;
+                    @include itemsFormulario (mensaje, flex, column);
                     textarea{
                         background-color: #222;
                         border: solid 1px;
@@ -156,9 +144,7 @@
             grid-area: descripcion;
             height: 100%;
             padding: 5px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            @include flex (flex, column, center, start);
             h3{
                 padding: 10px;
             }

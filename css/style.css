@@ -15,6 +15,8 @@
 }
 
 /*Media mobile mixin*/
+/*mixin display*/
+/*mixin para items formulario*/
 /*Botones*/
 .boton {
   background-color: #333;
@@ -195,6 +197,7 @@ footer .container .row .footer-contacto p {
 }
 .mainIndex #servicios-index .row {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: stretch;
   /*Tarjetas servicios index*/
@@ -236,8 +239,9 @@ footer .container .row .footer-contacto p {
 }
 .mainIndex .quienesSomos article {
   display: flex;
-  align-items: stretch;
+  flex-direction: column;
   justify-content: center;
+  align-items: stretch;
 }
 .mainIndex .quienesSomos article .imagenQS {
   padding: 0px;
@@ -290,14 +294,16 @@ footer .container .row .footer-contacto p {
   background-size: cover;
   background-position: center;
   display: flex;
-  align-items: end;
+  flex-direction: row;
   justify-content: center;
+  align-items: end;
 }
 .mainEmpresa #historiaEmpresa {
   padding: 20px;
 }
 .mainEmpresa #historiaEmpresa article {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -332,6 +338,7 @@ footer .container .row .footer-contacto p {
   /*Tarjetas mision,vision,valores*/
   padding: 40px;
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   align-items: stretch;
 }
@@ -436,6 +443,7 @@ footer .container .row .footer-contacto p {
   background-size: cover;
   background-position: center;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: end;
 }
@@ -443,15 +451,16 @@ footer .container .row .footer-contacto p {
   /*seccion faena y venta*/
   padding: 40px;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  align-content: center;
 }
 .mainServicios section #servicioFaena .faenaImagen {
   position: relative;
   display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
   padding: 20px;
 }
 .mainServicios section #servicioFaena .faenaImagen h2 {
@@ -503,15 +512,16 @@ footer .container .row .footer-contacto p {
 .mainServicios section #servicioVenta {
   padding: 40px;
   display: flex;
+  flex-direction: row-reverse;
   justify-content: center;
   align-items: center;
-  flex-direction: row-reverse;
 }
 .mainServicios section #servicioVenta .ventaImagen {
   position: relative;
   display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
   padding: 20px;
 }
 .mainServicios section #servicioVenta .ventaImagen h2 {
@@ -644,6 +654,7 @@ body .asideHacienda .contacto-hacienda {
   background-size: cover;
   background-position: center;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: end;
 }
@@ -788,6 +799,7 @@ body .asideHacienda .contacto-hacienda {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: start;
 }
 .mainContacto .infoContacto .descripcionContacto h3 {
   padding: 10px;

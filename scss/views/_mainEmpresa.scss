@@ -7,17 +7,13 @@
             background-image: linear-gradient(rgba(5,7,12,0.60),rgba(5,7,12,0.60)), url(../img/frente-matadero.png);
             background-size: cover;
             background-position: center;
-            display: flex;
-            align-items: end;
-            justify-content: center;
+            @include flex(flex, row, center, end);
         }
     }
     #historiaEmpresa{
         padding: 20px;
         article{
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flex(flex, row, center, center);
             .row{
                 div{
                     img{
@@ -52,9 +48,7 @@
             .tarjetasEmpresa{
                 /*Tarjetas mision,vision,valores*/
                 padding: 40px;
-                display: flex;
-                justify-content: space-around;
-                align-items: stretch;
+                @include flex(flex, row, space-around, stretch);
                 @include mobile {
                     padding: 20px;
                     text-align: center;

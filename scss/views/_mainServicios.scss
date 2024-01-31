@@ -6,23 +6,16 @@
         background-image: linear-gradient(rgba(5,7,12,0.60),rgba(5,7,12,0.60)), url(../img/portadaServicios.webp);
         background-size: cover;
         background-position: center;
-        display: flex;
-        justify-content: center;
-        align-items: end;
+        @include flex(flex, row, center, end);
     }
     section{
         #servicioFaena{
             /*seccion faena y venta*/
             padding: 40px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            align-content: center;
+            @include flex (flex, row, center, center);
             .faenaImagen{
                 position: relative;
-                display: flex;
-                align-items: center;
-                justify-content: center;
+                @include flex (flex, row, center, center);
                 padding: 20px;
                 h2{
                     font-family: "Bebas neue";
@@ -68,15 +61,10 @@
         }
         #servicioVenta{
             padding: 40px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: row-reverse;
+            @include flex(flex, row-reverse, center, center);
             .ventaImagen {
                 position: relative;
-                display: flex;
-                align-items: center;
-                justify-content: center;
+                @include flex(flex, row, center, center);
                 padding: 20px;
                 h2{
                     font-family: "Bebas neue";

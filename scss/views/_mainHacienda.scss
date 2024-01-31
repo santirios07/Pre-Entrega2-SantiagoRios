@@ -50,10 +50,7 @@ body{
         background-color: #dcdbdb;
         padding: 1.5rem;
         .contacto-hacienda{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            @include flex(flex, column, center, center);
             padding: 20px;
         }
     }

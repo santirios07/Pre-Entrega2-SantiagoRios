@@ -4,3 +4,18 @@
         @content;
     }
 }
+
+/*mixin display*/
+@mixin flex ($display, $direccion, $horizontal, $vertical){
+    display: $display;
+    flex-direction: $direccion;
+    justify-content: $horizontal;
+    align-items: $vertical;
+}
+
+/*mixin para items formulario*/
+@mixin itemsFormulario ($area, $flex, $direccion){
+    grid-area: $area;
+    display: $flex;
+    flex-direction: $direccion;
+}
