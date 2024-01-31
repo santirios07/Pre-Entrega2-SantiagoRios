@@ -326,7 +326,7 @@ footer .container .row .footer-contacto p {
 /*pagina empresa*/
 .mainEmpresa .portadaEmpresa .tituloPagina {
   padding: 50px;
-  background-image: linear-gradient(rgba(5, 7, 12, 0.6), rgba(5, 7, 12, 0.6)), url(../img/frente-matadero.png);
+  background-image: linear-gradient(rgba(5, 7, 12, 0.6), rgba(5, 7, 12, 0.6)), url(../img/frente-matadero.webp);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -626,7 +626,7 @@ footer .container .row .footer-contacto p {
 
 /*pagina hacienda*/
 body .mainHacienda .portadaHacienda {
-  background-image: linear-gradient(rgba(5, 7, 12, 0.6), rgba(5, 7, 12, 0.6)), url(../img/portadaHacienda.jpg);
+  background-image: linear-gradient(rgba(5, 7, 12, 0.6), rgba(5, 7, 12, 0.6)), url(../img/portadaHacienda.webp);
   background-position: center;
   background-size: cover;
   height: 100%;
@@ -686,7 +686,7 @@ body .asideHacienda .contacto-hacienda {
 .mainContacto .portadaContacto {
   height: 100%;
   padding: 50px;
-  background-image: linear-gradient(rgba(5, 7, 12, 0.6), rgba(5, 7, 12, 0.6)), url(../img/portada4.jpg);
+  background-image: linear-gradient(rgba(5, 7, 12, 0.6), rgba(5, 7, 12, 0.6)), url(../img/portada4.webp);
   background-size: cover;
   background-position: center;
   display: flex;

@@ -4,7 +4,7 @@
     .portadaEmpresa{
         .tituloPagina{
             padding: 50px;
-            background-image: linear-gradient(rgba(5,7,12,0.60),rgba(5,7,12,0.60)), url(../img/frente-matadero.png);
+            background-image: linear-gradient(rgba(5,7,12,0.60),rgba(5,7,12,0.60)), url(../img/frente-matadero.webp);
             background-size: cover;
             background-position: center;
             @include flex(flex, row, center, end);
