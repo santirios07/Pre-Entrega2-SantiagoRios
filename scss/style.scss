@@ -1,12 +1,11 @@
-@font-face {
-    font-family: "Bebas Neue";
-    src: url(../fonts/BebasNeue-Regular.ttf);
-}
 
-@import "base/generales";
+
+
 @import "utilities/variables";
 @import "utilities/maps";
 @import "utilities/mixins";
+@import "utilities/extends";
+@import "base/generales";
 
 
 @import "components/botones";

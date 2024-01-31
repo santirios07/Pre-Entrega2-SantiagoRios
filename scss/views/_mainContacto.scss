@@ -56,13 +56,7 @@
                 &:nth-child(5){
                     @include itemsFormulario (mensaje, flex, column);
                     textarea{
-                        background-color: #222;
-                        border: solid 1px;
-                        border-color: #333232;
-                        color: #777;
-                        font-family: "Poppins";
-                        padding: 5px;
-                        font-size: 1.3rem;
+                        @extend %estilosFormulario;
                     }
                 }
                 &:last-child{
@@ -71,49 +65,17 @@
                     justify-content: space-between;
                 }
                 input{
-                    background-color: #222;
-                    border: solid 1px;
-                    border-color: #333232;
-                    color: #777;
-                    font-family: "Poppins";
-                    padding: 5px;
-                    font-size: 1.3rem;
+                    @extend %estilosFormulario;
                 }
                 select{
-                    background-color: #222;
-                    border: solid 1px;
-                    border-color: #333232;
-                    color: #777;
-                    font-family: "Poppins";
-                    padding: 5px;
-                    font-size: 1.3rem
+                    @extend %estilosFormulario;
                 }
                 /*Botones formulario*/
                 #botonSumbit{
-                    color: #afafaf;
-                    &:hover{
-                        background-color: #888;
-                        color: #222;
-                    }
-                    &:active{
-                        background-color: #666;
-                    }
-                    @include mobile{
-                        margin: 2px;
-                    }
+                    @extend %botonesFormulario;
                 }
                 #botonReset{
-                    color: #afafaf;
-                    &:hover{
-                        background-color: #888;
-                        color: #222;
-                    }
-                    &:active{
-                        background-color: #666;
-                    }
-                    @include mobile{
-                        margin: 2px;
-                    }
+                    @extend %botonesFormulario;
                 }
             }                
         }

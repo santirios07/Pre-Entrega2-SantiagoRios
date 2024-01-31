@@ -2,9 +2,7 @@ header{
     position: relative;
     nav{
         padding: 5px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include flex(flex, row, space-between,center);
         width: 100%;
         div{
             .navbar-brand{

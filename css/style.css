@@ -1,3 +1,21 @@
+/*VARIABLES*/
+/*Fuentes*/
+/*Mapas*/
+/*Media mobile mixin*/
+/*mixin display*/
+/*mixin para items formulario*/
+/*Extends*/
+/*Estilos componentes del formulario*/
+.mainContacto section #formularioContacto div select, .mainContacto section #formularioContacto div input, .mainContacto section #formularioContacto div:nth-child(5) textarea {
+  background-color: #222;
+  border: solid 1px;
+  border-color: #333232;
+  color: #777;
+  font-family: "Poppins";
+  padding: 5px;
+  font-size: 1.3rem;
+}
+
 @font-face {
   font-family: "Bebas Neue";
   src: url(../fonts/BebasNeue-Regular.ttf);
@@ -14,9 +32,6 @@
   text-decoration: none;
 }
 
-/*Media mobile mixin*/
-/*mixin display*/
-/*mixin para items formulario*/
 /*Botones*/
 .boton {
   background-color: #333;
@@ -39,6 +54,23 @@
   color: #000000;
 }
 
+/*Botones formulario de contacto*/
+.mainContacto section #formularioContacto div #botonReset, .mainContacto section #formularioContacto div #botonSumbit {
+  color: #afafaf;
+}
+.mainContacto section #formularioContacto div #botonReset:hover, .mainContacto section #formularioContacto div #botonSumbit:hover {
+  background-color: #888;
+  color: #222;
+}
+.mainContacto section #formularioContacto div #botonReset:active, .mainContacto section #formularioContacto div #botonSumbit:active {
+  background-color: #666;
+}
+@media screen and (max-width: 767px) {
+  .mainContacto section #formularioContacto div #botonReset, .mainContacto section #formularioContacto div #botonSumbit {
+    margin: 2px;
+  }
+}
+
 /*H1 paginas no index*/
 .tituloPagina {
   text-align: center;
@@ -55,6 +87,7 @@ header {
 header nav {
   padding: 5px;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   width: 100%;
@@ -108,6 +141,7 @@ footer {
   background-color: #F2F4F3;
   color: #000000;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 30px 15px;
@@ -116,7 +150,9 @@ footer {
   footer .container .row .footerImagen {
     /*footer alineado al centro para mobile*/
     display: flex;
+    flex-direction: row;
     justify-content: center;
+    align-items: start;
     padding: 1.5rem;
   }
 }
@@ -239,7 +275,7 @@ footer .container .row .footer-contacto p {
 }
 .mainIndex .quienesSomos article {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: stretch;
 }
@@ -710,67 +746,10 @@ body .asideHacienda .contacto-hacienda {
   display: flex;
   flex-direction: column;
 }
-.mainContacto section #formularioContacto div:nth-child(5) textarea {
-  background-color: #222;
-  border: solid 1px;
-  border-color: #333232;
-  color: #777;
-  font-family: "Poppins";
-  padding: 5px;
-  font-size: 1.3rem;
-}
 .mainContacto section #formularioContacto div:last-child {
   grid-area: sumbit;
   display: flex;
   justify-content: space-between;
-}
-.mainContacto section #formularioContacto div input {
-  background-color: #222;
-  border: solid 1px;
-  border-color: #333232;
-  color: #777;
-  font-family: "Poppins";
-  padding: 5px;
-  font-size: 1.3rem;
-}
-.mainContacto section #formularioContacto div select {
-  background-color: #222;
-  border: solid 1px;
-  border-color: #333232;
-  color: #777;
-  font-family: "Poppins";
-  padding: 5px;
-  font-size: 1.3rem;
-}
-.mainContacto section #formularioContacto div #botonSumbit {
-  color: #afafaf;
-}
-.mainContacto section #formularioContacto div #botonSumbit:hover {
-  background-color: #888;
-  color: #222;
-}
-.mainContacto section #formularioContacto div #botonSumbit:active {
-  background-color: #666;
-}
-@media screen and (max-width: 767px) {
-  .mainContacto section #formularioContacto div #botonSumbit {
-    margin: 2px;
-  }
-}
-.mainContacto section #formularioContacto div #botonReset {
-  color: #afafaf;
-}
-.mainContacto section #formularioContacto div #botonReset:hover {
-  background-color: #888;
-  color: #222;
-}
-.mainContacto section #formularioContacto div #botonReset:active {
-  background-color: #666;
-}
-@media screen and (max-width: 767px) {
-  .mainContacto section #formularioContacto div #botonReset {
-    margin: 2px;
-  }
 }
 .mainContacto .infoContacto {
   padding: 0px;

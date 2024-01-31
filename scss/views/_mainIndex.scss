@@ -12,7 +12,7 @@
             padding: 190px 0 50px 0;
             margin: 0;
             text-align: center;
-            font-family: "Bebas Neue";
+            font-family: $fuente-titulos;
             font-weight: 500;
             font-size: 5rem;
             @include mobile{
@@ -22,7 +22,7 @@
             }
             strong{
                 color: #ff0000;
-                font-family: "Bebas Neue";
+                font-family: $fuente-titulos;
             }
         }
         p{
@@ -80,7 +80,7 @@
             padding: 25px;
         }
         article{
-            @include flex(flex, column, center, stretch);
+            @include flex(flex, row, center, stretch);
             .imagenQS{
                 padding: 0px;
                 img{

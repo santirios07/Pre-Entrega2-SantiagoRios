@@ -1,7 +1,12 @@
+@font-face {
+    font-family: $fuente-titulos;
+    src: url(../fonts/BebasNeue-Regular.ttf);
+}
+
 *{
     margin: 0;
     padding: 0;
-    font-family: "Poppins", sans-serif;
+    font-family: $fuente-general, sans-serif;
     body{
         background-color: #000000;
         a{
