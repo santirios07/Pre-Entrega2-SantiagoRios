@@ -1,7 +1,7 @@
 /*Footer*/
 footer{
-    background-color: #F2F4F3;
-    color: #000000;
+    background-color: map-get($colores-fondos, fondo-secundario);
+    color: map-get($colores-fondos, fondo-primario);
     @include flex (flex, row, space-between, center);
     padding: 30px 15px;
     .container{

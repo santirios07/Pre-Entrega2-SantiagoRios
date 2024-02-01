@@ -26,14 +26,14 @@
                     }
                 }
                 .textoHistoria{
-                    color: #f2f4f3;
+                    color: map-get($colores-textos, texto-primario);
                     text-align: left;
                     @include mobile{
                         text-align: center;
                     }
                     h2{
                         font-size: 1.7rem;
-                        color: #ff0000;
+                        color: map-get($colores-textos, titulo-secundario);
                     }
                     p{
                         padding: 5px;
@@ -57,16 +57,16 @@
                     width: 350px;
                     border-radius: 9px;
                     padding: 10px;
-                    background-color: #f2f4f3;
+                    background: map-get($gradientes, gradiente-blanco);
                     font-size: 1.2rem;
                     h3{
                         font-size: 1.6rem;
                         text-decoration: underline;
-                        color: #A50903;
+                        color: map-get($colores-textos, titulo-secundario);
                         padding: 5px;
                     }
                     p{
-                        color: #666;
+                        color: map-get($colores-textos, texto-secundario-gris);
                         padding: 10px;
                     }
                     @include mobile{
@@ -77,16 +77,16 @@
                     width: 350px;
                     border-radius: 9px;
                     padding: 10px;
-                    background:linear-gradient(130.58deg, #ED2E26 9.62%, #A50903 84.33%), #124F86;
+                    background: map-get($gradientes, gradiente-rojo);
                     font-size: 1.2rem;
                     h3{
                         font-size: 1.6rem;
                         text-decoration: underline;
-                        color: #e8e8e8;
+                        color: map-get($colores-textos, texto-primario);
                         padding: 5px;
                     }
                     p{
-                        color: #e3e3e3;
+                        color: map-get($colores-textos, texto-secundario-blanco);
                         padding: 10px;
                     }
                     @include mobile{
@@ -97,16 +97,16 @@
                     width: 350px;
                     border-radius: 9px;
                     padding: 10px;
-                    background-color: #f2f4f3;
+                    background: map-get($gradientes, gradiente-blanco);
                     font-size: 1.2rem;
                     h3{
                         font-size: 1.6rem;
                         text-decoration: underline;
-                        color: #A50903;
+                        color: map-get($colores-textos, titulo-secundario);
                         padding: 5px;
                     }
                     ul{
-                        color: #666;
+                        color: map-get($colores-textos, texto-secundario-gris);
                         list-style: none;
                         padding: 10px;
                         li{
@@ -126,7 +126,7 @@
         article{
             h4{
                 text-align: center;
-                color: #ff0000;
+                color: map-get($colores-textos, titulo-secundario);
             }
             .row{
                 div{

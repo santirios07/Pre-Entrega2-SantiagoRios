@@ -8,14 +8,14 @@ body{
             height: 100%;
             padding: 50px;
             p{
-                color: #f2f4f3;
+                color: map-get($colores-textos, texto-primario);
                 font-size: 1.2rem;
                 padding: 10px;
             }
         }
         section{
             .trazabilidad{
-                background-color: #f4f4f4;
+                background-color: map-get($colores-fondos, fondo-secundario);
                 padding: 1.5rem;
                 .trazabilidadCuerpo{
                     @include mobile{
@@ -25,7 +25,7 @@ body{
                 }
             }
             .calidad{
-                background-color: #dcdbdb;
+                background-color: map-get($colores-fondos, fondo-terciario);
                 padding: 1.5rem;
                 .calidadCuerpo{
                     @include mobile{
@@ -35,7 +35,7 @@ body{
                 }
             }
             .medioAmbiente{
-                background-color: #f4f4f4;
+                background-color: map-get($colores-fondos, fondo-secundario);
                 padding: 1.5rem;
                 .medioAmbienteCuerpo{
                     @include mobile{
@@ -47,7 +47,7 @@ body{
         }
     }
     .asideHacienda{
-        background-color: #dcdbdb;
+        background-color: map-get($colores-fondos, fondo-terciario);
         padding: 1.5rem;
         .contacto-hacienda{
             @include flex(flex, column, center, center);

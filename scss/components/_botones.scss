@@ -9,10 +9,10 @@
     a{
         display: block;
         padding: 6px;
-        color: #ffff;
+        color: map-get($colores-textos, titulo-primario);
     }
     &:hover{
-        background-color: #666;
+        background-color: map-get($colores-textos, texto-secundario-gris);
     }
     &:active{
         background-color: #888;
@@ -22,13 +22,13 @@
 
 /*Botones formulario de contacto*/
 %botonesFormulario{
-    color: #afafaf;
+    color: map-get($colores-textos, texto-terciario-gris);
                     &:hover{
                         background-color: #888;
                         color: #222;
                     }
                     &:active{
-                        background-color: #666;
+                        background-color: map-get($colores-textos, texto-secundario-gris);
                     }
                     @include mobile{
                         margin: 2px;

@@ -7,7 +7,7 @@
         background-position: center;
         background-attachment: fixed;
         text-align: center;
-        color: #ffffff;
+        color: map-get($colores-textos, titulo-primario);
         h1{
             padding: 190px 0 50px 0;
             margin: 0;
@@ -21,7 +21,7 @@
                 font-size: 3.8rem;
             }
             strong{
-                color: #ff0000;
+                color: map-get($colores-textos, titulo-secundario);
                 font-family: $fuente-titulos;
             }
         }
@@ -39,12 +39,11 @@
     
     #servicios-index{
         height: 100%;
-        background-color: #000000;
         padding: 25px;
         text-align: center;
         /*Titulo de seccion servicios*/
         h2{
-            color:#f2f4f3;
+            color:map-get($colores-textos, texto-primario);
             font-size: 2rem;
         }
         .row{
@@ -56,7 +55,7 @@
                 border-radius: 9px;
                 margin: 20px;
                 padding: 20px;
-                background-color: #f2f4f3;
+                background-color: map-get($colores-fondos, fondo-secundario);
                 box-shadow: -5px 5px 20px 0px #777;
                 @include flex(flex, column, center, center);
                 @include mobile{
@@ -66,7 +65,7 @@
                     font-size: 1.7rem;
                 }
                 p{
-                    color: #666;
+                    color: map-get($colores-textos, texto-secundario-gris);
                     padding: 15px;
                     font-size: 1.25rem;
                 }
@@ -95,7 +94,7 @@
             .textoQS{
                 padding: 40px;
                 text-align: center;
-                background-color: #f2f4f3;
+                background-color: map-get($colores-fondos, fondo-secundario);
                 border-radius: 0 20px 20px 0px;
                 @include flex(flex, column, center, center);
                 @include mobile{
@@ -107,7 +106,7 @@
                     padding: 5px;
                 }
                 p{
-                    color: #666;
+                    color: map-get($colores-textos, texto-secundario-gris);
                     padding: 10px;
                     font-size: 1.25rem;
                     @include mobile{

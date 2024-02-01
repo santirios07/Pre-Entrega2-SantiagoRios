@@ -17,7 +17,7 @@ header{
             .navbar-toggler{
                 @include mobile{
                     /*Color boton desplegable mobile*/
-                    background-color: #f2f4f3;
+                    background-color: map-get($colores-fondos, fondo-secundario);
                 }
             }
             #offcanvasNavbar{
@@ -28,7 +28,7 @@ header{
             }
             .offcanvas-title{
                 @include mobile{
-                    color: #f2f4f3;
+                    color: map-get($colores-fondos, fondo-secundario);
                 }
             }
             div{
@@ -42,14 +42,14 @@ header{
                                 }
                                 .nav-link{
                                     &:hover{
-                                        border-bottom: solid 0.5px #666;
+                                        border-bottom: solid 0.5px map-get($colores-textos, texto-secundario-gris);
                                         @include mobile{
                                             width: max-content;
                                         }
                                     }
                                 }
                                 .active{
-                                    border-bottom: solid 1px #ffffff;
+                                    border-bottom: solid 1px map-get($colores-textos, titulo-primario);
                                     @include mobile{
                                         width: max-content;
                                     }

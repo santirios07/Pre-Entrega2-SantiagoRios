@@ -1,1 +1,24 @@
 /*Mapas*/
+
+$colores-textos: (
+    texto-primario: #f2f4f3,
+    texto-secundario-blanco:#d7d7d7,
+    texto-secundario-gris:#666,
+    texto-terciario-gris:#afafaf,
+    titulo-primario: #ffff,
+    titulo-secundario: #ff0000,
+
+);
+
+$colores-fondos: (
+    fondo-primario: #000000,
+    fondo-secundario: #f2f4f3,
+    fondo-terciario: #dcdbdb
+);
+
+
+$gradientes: (
+    gradiente-azul: linear-gradient(130.58deg, #0c07cb 9.62%, #03094f 84.33%),
+    gradiente-rojo: linear-gradient(130.58deg, #ED2E26 9.62%, #A50903 84.33%),
+    gradiente-blanco: linear-gradient(130.58deg, #f2f4f3, #dcdbdb 84.33%)
+)

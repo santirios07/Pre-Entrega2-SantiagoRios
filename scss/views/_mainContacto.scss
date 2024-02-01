@@ -12,15 +12,15 @@
         .textoFormulario{
             text-align: center;
             font-size: 0.9rem;
-            background-color: #000000;
-            color: #afafaf;
+            background-color: map-get($colores-fondos, fondo-primario);
+            color: map-get($colores-textos, texto-terciario-gris);
             padding: 10px;
             font-size: 1.3rem;
         }
         #formularioContacto{
             padding-bottom: 50px;
-            background-color: black;
-            color: #afafaf;
+            background-color: map-get($colores-fondos, fondo-primario);
+            color: map-get($colores-textos, texto-terciario-gris);
             display: grid;
             grid-template-areas: 
             "servicio nombre"
@@ -101,8 +101,8 @@
             align-items: start;
         }
         .descripcionContacto{
-            background:linear-gradient(130.58deg, #ED2E26 9.62%, #A50903 84.33%), #124F86;
-            color: hwb(0 89% 11%);
+            background:map-get($gradientes, gradiente-rojo);
+            color: map-get($colores-textos, texto-secundario-blanco);
             grid-area: descripcion;
             height: 100%;
             padding: 5px;

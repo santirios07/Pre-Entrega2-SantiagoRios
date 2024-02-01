@@ -2,7 +2,7 @@
 
  .tituloPagina{
     text-align: center;
-    color: #ffff;
+    color: map-get($colores-textos, titulo-primario);
     font-family: $fuente-titulos, sans-serif;
     font-size: 3rem;
     font-weight: 500;

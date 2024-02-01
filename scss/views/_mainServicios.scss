@@ -18,9 +18,9 @@
                 @include flex (flex, row, center, center);
                 padding: 20px;
                 h2{
-                    font-family: "Bebas neue";
+                    font-family: $fuente-titulos;
                     font-weight: 400;
-                    color: #ffff;
+                    color: map-get($colores-textos, titulo-primario);
                     border: solid 2px;
                     border-radius: 10px;
                     font-size: 3rem;
@@ -39,16 +39,16 @@
             }
             .faenaTexto{
                 padding: 20px;
-                background:linear-gradient(130.58deg, #ED2E26 9.62%, #A50903 84.33%), #124F86;
+                background: map-get($gradientes, gradiente-rojo);
                 border-radius: 15px;
                 text-align: center;
                 h3{
                     padding: 10px;
                     text-transform: uppercase;
-                    color: #f2f4f3;
+                    color: map-get($colores-textos, texto-primario);
                 }
                 p{
-                    color: #d7d7d7;
+                    color: map-get($colores-textos, texto-secundario-blanco);
                     padding: 0 10px 5px 10px;
                 }
                 @include mobile{
@@ -67,9 +67,9 @@
                 @include flex(flex, row, center, center);
                 padding: 20px;
                 h2{
-                    font-family: "Bebas neue";
+                    font-family: $fuente-titulos;
                     font-weight: 400;
-                    color: #ffff;
+                    color: map-get($colores-textos, titulo-primario);
                     border: solid 2px;
                     border-radius: 10px;
                     font-size: 3rem;
@@ -88,16 +88,16 @@
             }
             .ventaTexto{
                 padding: 20px;
-                background: linear-gradient(130.58deg, #0c07cb 9.62%, #03094f 84.33%), #124F86;
+                background: map-get($gradientes, gradiente-azul);
                 border-radius: 15px;
                 text-align: center;
                 h3{
                     padding: 10px;
                     text-transform: uppercase;
-                    color: #f2f4f3;
+                    color: map-get($colores-textos, texto-primario);
                 }
                 p{
-                    color: #d7d7d7;
+                    color: map-get($colores-textos, texto-secundario-blanco);
                     padding: 0 10px 5px 10px;
                 }
                 @include mobile{
@@ -111,7 +111,7 @@
     }
     .serviciosContacto{
         /*servicios boton contactanos*/
-        color: #f2f4f3;
+        color: map-get($colores-textos, texto-primario);
         text-align: center;
         padding: 20px;
         font-size: 1.2rem;

@@ -128,7 +128,7 @@ header nav div div .offcanvas-body div ul li .nav-link:hover {
   }
 }
 header nav div div .offcanvas-body div ul li .active {
-  border-bottom: solid 1px #ffffff;
+  border-bottom: solid 1px white;
 }
 @media screen and (max-width: 767px) {
   header nav div div .offcanvas-body div ul li .active {
@@ -138,7 +138,7 @@ header nav div div .offcanvas-body div ul li .active {
 
 /*Footer*/
 footer {
-  background-color: #F2F4F3;
+  background-color: #f2f4f3;
   color: #000000;
   display: flex;
   flex-direction: row;
@@ -187,7 +187,7 @@ footer .container .row .footer-contacto p {
   background-position: center;
   background-attachment: fixed;
   text-align: center;
-  color: #ffffff;
+  color: white;
 }
 .mainIndex .portadaIndex h1 {
   padding: 190px 0 50px 0;
@@ -222,7 +222,6 @@ footer .container .row .footer-contacto p {
 }
 .mainIndex #servicios-index {
   height: 100%;
-  background-color: #000000;
   padding: 25px;
   text-align: center;
   /*Titulo de seccion servicios*/
@@ -388,13 +387,13 @@ footer .container .row .footer-contacto p {
   width: 350px;
   border-radius: 9px;
   padding: 10px;
-  background-color: #f2f4f3;
+  background: linear-gradient(130.58deg, #f2f4f3, #dcdbdb 84.33%);
   font-size: 1.2rem;
 }
 .mainEmpresa #basesEmpresa article .tarjetasEmpresa .tarjetaMision h3 {
   font-size: 1.6rem;
   text-decoration: underline;
-  color: #A50903;
+  color: #ff0000;
   padding: 5px;
 }
 .mainEmpresa #basesEmpresa article .tarjetasEmpresa .tarjetaMision p {
@@ -410,17 +409,17 @@ footer .container .row .footer-contacto p {
   width: 350px;
   border-radius: 9px;
   padding: 10px;
-  background: linear-gradient(130.58deg, #ED2E26 9.62%, #A50903 84.33%), #124F86;
+  background: linear-gradient(130.58deg, #ED2E26 9.62%, #A50903 84.33%);
   font-size: 1.2rem;
 }
 .mainEmpresa #basesEmpresa article .tarjetasEmpresa .tarjetaVision h3 {
   font-size: 1.6rem;
   text-decoration: underline;
-  color: #e8e8e8;
+  color: #f2f4f3;
   padding: 5px;
 }
 .mainEmpresa #basesEmpresa article .tarjetasEmpresa .tarjetaVision p {
-  color: #e3e3e3;
+  color: #d7d7d7;
   padding: 10px;
 }
 @media screen and (max-width: 767px) {
@@ -432,13 +431,13 @@ footer .container .row .footer-contacto p {
   width: 350px;
   border-radius: 9px;
   padding: 10px;
-  background-color: #f2f4f3;
+  background: linear-gradient(130.58deg, #f2f4f3, #dcdbdb 84.33%);
   font-size: 1.2rem;
 }
 .mainEmpresa #basesEmpresa article .tarjetasEmpresa .tarjetaValores h3 {
   font-size: 1.6rem;
   text-decoration: underline;
-  color: #A50903;
+  color: #ff0000;
   padding: 5px;
 }
 .mainEmpresa #basesEmpresa article .tarjetasEmpresa .tarjetaValores ul {
@@ -500,7 +499,7 @@ footer .container .row .footer-contacto p {
   padding: 20px;
 }
 .mainServicios section #servicioFaena .faenaImagen h2 {
-  font-family: "Bebas neue";
+  font-family: "Bebas Neue";
   font-weight: 400;
   color: white;
   border: solid 2px;
@@ -522,7 +521,7 @@ footer .container .row .footer-contacto p {
 }
 .mainServicios section #servicioFaena .faenaTexto {
   padding: 20px;
-  background: linear-gradient(130.58deg, #ED2E26 9.62%, #A50903 84.33%), #124F86;
+  background: linear-gradient(130.58deg, #ED2E26 9.62%, #A50903 84.33%);
   border-radius: 15px;
   text-align: center;
 }
@@ -561,7 +560,7 @@ footer .container .row .footer-contacto p {
   padding: 20px;
 }
 .mainServicios section #servicioVenta .ventaImagen h2 {
-  font-family: "Bebas neue";
+  font-family: "Bebas Neue";
   font-weight: 400;
   color: white;
   border: solid 2px;
@@ -583,7 +582,7 @@ footer .container .row .footer-contacto p {
 }
 .mainServicios section #servicioVenta .ventaTexto {
   padding: 20px;
-  background: linear-gradient(130.58deg, #0c07cb 9.62%, #03094f 84.33%), #124F86;
+  background: linear-gradient(130.58deg, #0c07cb 9.62%, #03094f 84.33%);
   border-radius: 15px;
   text-align: center;
 }
@@ -638,7 +637,7 @@ body .mainHacienda .portadaHacienda p {
   padding: 10px;
 }
 body .mainHacienda section .trazabilidad {
-  background-color: #f4f4f4;
+  background-color: #f2f4f3;
   padding: 1.5rem;
 }
 @media screen and (max-width: 767px) {
@@ -658,7 +657,7 @@ body .mainHacienda section .calidad {
   }
 }
 body .mainHacienda section .medioAmbiente {
-  background-color: #f4f4f4;
+  background-color: #f2f4f3;
   padding: 1.5rem;
 }
 @media screen and (max-width: 767px) {
@@ -704,7 +703,7 @@ body .asideHacienda .contacto-hacienda {
 }
 .mainContacto section #formularioContacto {
   padding-bottom: 50px;
-  background-color: black;
+  background-color: #000000;
   color: #afafaf;
   display: grid;
   grid-template-areas: "servicio nombre" "telefono email" "mensaje mensaje" "sumbit sumbit";
@@ -770,8 +769,8 @@ body .asideHacienda .contacto-hacienda {
   }
 }
 .mainContacto .infoContacto .descripcionContacto {
-  background: linear-gradient(130.58deg, #ED2E26 9.62%, #A50903 84.33%), #124F86;
-  color: hwb(0 89% 11%);
+  background: linear-gradient(130.58deg, #ED2E26 9.62%, #A50903 84.33%);
+  color: #d7d7d7;
   grid-area: descripcion;
   height: 100%;
   padding: 5px;
