@@ -30,7 +30,4 @@
                     &:active{
                         background-color: map-get($colores-textos, texto-secundario-gris);
                     }
-                    @include mobile{
-                        margin: 2px;
-                    }
 }

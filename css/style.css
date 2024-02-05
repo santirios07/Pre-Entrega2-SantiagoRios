@@ -65,11 +65,6 @@
 .mainContacto section #formularioContacto div #botonReset:active, .mainContacto section #formularioContacto div #botonSumbit:active {
   background-color: #666;
 }
-@media screen and (max-width: 767px) {
-  .mainContacto section #formularioContacto div #botonReset, .mainContacto section #formularioContacto div #botonSumbit {
-    margin: 2px;
-  }
-}
 
 /*H1 paginas no index*/
 .tituloPagina {
@@ -750,6 +745,13 @@ body .asideHacienda .contacto-hacienda {
   grid-area: sumbit;
   display: flex;
   justify-content: space-between;
+}
+@media screen and (max-width: 767px) {
+  .mainContacto section #formularioContacto div:last-child {
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
 }
 .mainContacto .infoContacto {
   padding: 0px;

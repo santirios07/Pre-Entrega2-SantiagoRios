@@ -63,6 +63,11 @@
                     grid-area: sumbit;
                     display: flex;
                     justify-content: space-between;
+                    @include mobile{
+                        flex-direction: column;
+                        justify-content: center;
+                        gap: 10px;
+                    }
                 }
                 input{
                     @extend %estilosFormulario;
