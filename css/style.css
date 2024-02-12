@@ -16,6 +16,13 @@
   font-size: 1.3rem;
 }
 
+/*Para Imagenes en boostrap*/
+.mainEmpresa #prensa article .row div .noticia2, .mainEmpresa #prensa article .row div .noticia1, .mainEmpresa #prensa article .row div .videoPrensa {
+  max-width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+
 @font-face {
   font-family: "Bebas Neue";
   src: url(../fonts/BebasNeue-Regular.ttf);
@@ -207,18 +214,18 @@ footer .container .row .footer-contacto p {
 .mainIndex .portadaIndex p {
   font-size: 1.8rem;
   font-weight: 400;
-  padding: 50px;
+  padding: 80px;
   margin: 0;
 }
 @media screen and (max-width: 767px) {
   .mainIndex .portadaIndex p {
     font-size: 1.4rem;
-    padding: 20px;
+    padding: 25px 10px;
   }
 }
 .mainIndex #servicios-index {
   height: 100%;
-  padding: 25px;
+  padding: 80px 25px;
   text-align: center;
   /*Titulo de seccion servicios*/
 }
@@ -238,17 +245,17 @@ footer .container .row .footer-contacto p {
   border: solid 1px #777;
   border-radius: 9px;
   margin: 20px;
-  padding: 20px;
+  padding: 10px 5px;
   background-color: #f2f4f3;
-  box-shadow: -5px 5px 20px 0px #777;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 @media screen and (max-width: 767px) {
   .mainIndex #servicios-index .row .servicios-tarjeta {
     margin: 20px 10px;
+    padding: 20px;
   }
 }
 .mainIndex #servicios-index .row .servicios-tarjeta h3 {
@@ -321,7 +328,7 @@ footer .container .row .footer-contacto p {
 /*pagina empresa*/
 .mainEmpresa .portadaEmpresa .tituloPagina {
   padding: 50px;
-  background-image: linear-gradient(rgba(5, 7, 12, 0.6), rgba(5, 7, 12, 0.6)), url(../img/frente-matadero.webp);
+  background-image: linear-gradient(rgba(5, 7, 12, 0.6), rgba(5, 7, 12, 0.6)), url(../../img/portada3.webp);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -330,7 +337,7 @@ footer .container .row .footer-contacto p {
   align-items: end;
 }
 .mainEmpresa #historiaEmpresa {
-  padding: 20px;
+  padding: 40px 20px;
 }
 .mainEmpresa #historiaEmpresa article {
   display: flex;
@@ -457,8 +464,11 @@ footer .container .row .footer-contacto p {
   text-align: center;
   color: #ff0000;
 }
-.mainEmpresa #prensa article .row div .videoPrensa {
-  max-width: 100%;
+.mainEmpresa #prensa article .row div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 @media screen and (max-width: 767px) {
   .mainEmpresa #prensa {
@@ -532,12 +542,12 @@ footer .container .row .footer-contacto p {
 }
 @media screen and (max-width: 767px) {
   .mainServicios section #servicioFaena .faenaTexto {
-    margin-top: 10px;
+    margin-top: 40px;
   }
 }
 @media screen and (max-width: 767px) {
   .mainServicios section #servicioFaena {
-    padding: 10px;
+    padding: 40px 10px;
   }
 }
 .mainServicios section #servicioVenta {
@@ -578,22 +588,21 @@ footer .container .row .footer-contacto p {
 }
 .mainServicios section #servicioVenta .ventaTexto {
   padding: 20px;
-  background: linear-gradient(130.58deg, #0c07cb 9.62%, #03094f 84.33%);
+  background: linear-gradient(130.58deg, #f2f4f3, #dcdbdb 84.33%);
   border-radius: 15px;
   text-align: center;
 }
 .mainServicios section #servicioVenta .ventaTexto h3 {
   padding: 10px;
   text-transform: uppercase;
-  color: #f2f4f3;
 }
 .mainServicios section #servicioVenta .ventaTexto p {
-  color: #d7d7d7;
+  color: #666;
   padding: 0 10px 5px 10px;
 }
 @media screen and (max-width: 767px) {
   .mainServicios section #servicioVenta .ventaTexto {
-    margin-top: 10px;
+    margin-top: 40px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -610,7 +619,7 @@ footer .container .row .footer-contacto p {
 }
 @media screen and (max-width: 767px) {
   .mainServicios .serviciosContacto {
-    padding: 50px;
+    padding: 80px 40px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -748,9 +757,10 @@ body .asideHacienda .contacto-hacienda {
 }
 @media screen and (max-width: 767px) {
   .mainContacto section #formularioContacto div:last-child {
+    margin-top: 10px;
     flex-direction: column;
     justify-content: center;
-    gap: 10px;
+    gap: 25px;
   }
 }
 .mainContacto .infoContacto {

@@ -52,11 +52,11 @@
                     padding: 0 10px 5px 10px;
                 }
                 @include mobile{
-                    margin-top: 10px;
+                    margin-top: 40px;
                 }
             }
             @include mobile{
-                padding: 10px;
+                padding: 40px 10px;
             }
         }
         #servicioVenta{
@@ -88,20 +88,19 @@
             }
             .ventaTexto{
                 padding: 20px;
-                background: map-get($gradientes, gradiente-azul);
+                background: map-get($gradientes, gradiente-blanco);
                 border-radius: 15px;
                 text-align: center;
                 h3{
                     padding: 10px;
                     text-transform: uppercase;
-                    color: map-get($colores-textos, texto-primario);
                 }
                 p{
-                    color: map-get($colores-textos, texto-secundario-blanco);
+                    color: map-get($colores-textos, texto-secundario-gris);
                     padding: 0 10px 5px 10px;
                 }
                 @include mobile{
-                    margin-top: 10px;
+                    margin-top: 40px;
                 }
             }
             @include mobile{
@@ -116,7 +115,7 @@
         padding: 20px;
         font-size: 1.2rem;
         @include mobile{
-            padding: 50px;
+            padding: 80px 40px;
         }
         span{
             @include mobile{

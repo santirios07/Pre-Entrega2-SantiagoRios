@@ -28,18 +28,18 @@
         p{
             font-size: 1.8rem;
             font-weight: 400;
-            padding: 50px;
+            padding: 80px;
             margin: 0;
             @include mobile{
                 font-size: 1.4rem;
-                padding: 20px;
+                padding: 25px 10px;
             }
         }
     }
     
     #servicios-index{
         height: 100%;
-        padding: 25px;
+        padding: 80px 25px;
         text-align: center;
         /*Titulo de seccion servicios*/
         h2{
@@ -54,12 +54,12 @@
                 border: solid 1px #777;
                 border-radius: 9px;
                 margin: 20px;
-                padding: 20px;
+                padding: 10px 5px;
                 background-color: map-get($colores-fondos, fondo-secundario);
-                box-shadow: -5px 5px 20px 0px #777;
-                @include flex(flex, column, center, center);
+                @include flex(flex, column, space-between, center);
                 @include mobile{
                     margin: 20px 10px;
+                    padding: 20px;
                 }
                 h3{
                     font-size: 1.7rem;

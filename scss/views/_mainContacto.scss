@@ -64,9 +64,10 @@
                     display: flex;
                     justify-content: space-between;
                     @include mobile{
+                        margin-top: 10px;
                         flex-direction: column;
                         justify-content: center;
-                        gap: 10px;
+                        gap: 25px;
                     }
                 }
                 input{

@@ -4,14 +4,14 @@
     .portadaEmpresa{
         .tituloPagina{
             padding: 50px;
-            background-image: linear-gradient(rgba(5,7,12,0.60),rgba(5,7,12,0.60)), url(../img/frente-matadero.webp);
+            background-image: linear-gradient(rgba(5,7,12,0.60),rgba(5,7,12,0.60)), url(../../img/portada3.webp);
             background-size: cover;
             background-position: center;
             @include flex(flex, row, center, end);
         }
     }
     #historiaEmpresa{
-        padding: 20px;
+        padding: 40px 20px;
         article{
             @include flex(flex, row, center, center);
             .row{
@@ -130,8 +130,15 @@
             }
             .row{
                 div{
+                    @include flex(flex, row, center, center);
                     .videoPrensa{
-                        max-width: 100%;
+                        @extend %estilosImagenes;
+                    }
+                    .noticia1{
+                        @extend %estilosImagenes;
+                    }
+                    .noticia2{
+                        @extend %estilosImagenes;
                     }
                 }
             }
