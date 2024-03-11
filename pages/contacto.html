@@ -7,6 +7,17 @@
     <meta name="keywords" content="contacto Matadero San Justo, faena y comercialización, compra y venta de hacienda, oportunidades de trabajo, servicio al cliente, Matadero Frigorífico San Justo, solicitar información, comunicarse con nosotros">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      (function(){
+          emailjs.init({
+            publicKey: "uKVHvz5a719XQTEdb",
+          });
+      })();
+    </script>
+    <script src="../js/script.js"></script>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -80,7 +91,7 @@
               </div>
               <div>
                   <label for="nombre-apellido">Nombre y Apellido</label>
-                  <input type="text" id="nombre-apellido" placeholder="Ingresa tu nombre">
+                  <input type="text" id="nombre-apellido" placeholder="Ingresa tu nombre" required>
               </div>
               <div>
                   <label for="telefono">Telefono</label>
@@ -88,14 +99,14 @@
               </div>
               <div>
                     <label for="email">Email</label>
-                    <input type="email" id="email">
+                    <input type="email" id="email" required>
               </div>
               <div>
                     <label for="mensaje">Mensaje:</label>
-                    <textarea id="mensaje" cols="30" rows="10">Escribe tu mensaje aquí.</textarea>
+                    <textarea id="mensaje" cols="30" rows="10" placeholder="Escribe tu mensaje aqui." required></textarea>
               </div>
               <div>
-                    <input type="submit" value="Enviar consulta" id="botonSumbit">
+                    <input type="submit" value="Enviar consulta" id="botonSumbit" onclick="sendEmail()">
                     <input type="reset" value="Borrar consulta" id="botonReset">
               </div>
           </form>
